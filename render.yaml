@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: tokens-postability-engine
+    runtime: node
+    plan: starter
+    buildCommand: npm ci
+    startCommand: npx tsx src/worker.ts
+    healthCheckPath: /healthz
+    disk:
+      name: tokens-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PATH
+        value: /var/data/tokens-postability.sqlite
+      - key: SOURCE_REGISTRY_PATH
+        value: /opt/render/project/src/config/source-registry.json
+      - key: SEC_USER_AGENT
+        value: TokensPostabilityEngine/0.1 (nicholas@smok3.io)
+      # Set in the Render dashboard (secrets):
+      # SLACK_WEBHOOK_URL, SLACK_BOT_TOKEN, SLACK_SIGNING_SECRET,
+      # SLACK_POST_CHANNEL_ID, SLACK_VERIFY_CHANNEL_ID,
+      # TWITTERAPI_IO_KEY, TOKENS_ANTHROPIC_API_KEY, CRYPTOPANIC_API_KEY

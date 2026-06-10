@@ -1,0 +1,305 @@
+assetId,name,symbol,category,lists,primaryVariantSymbol,primaryVariantMint
+copper,Copper,COPPER,commodity,all;metals,COPXon,X7j77hTmjZJbepkXXBcsEapM8qNgdfihkFj6CZ5ondo
+gold,Gold,GLD,commodity,all;metals,XAUt0,AymATz4TCL9sWNEEV9Kvyz45CHVhDZ6kUgjTJPzLpU9P
+precious-metals,Precious Metals,METALS,commodity,all;metals,VNXAU,9TPL8droGJ7jThsq4momaoz6uhTcvX2SeMqipoPmNa8R
+silver,Silver,XAG,commodity,all;metals,SLVon,iy11ytbSGcUnrjE6Lfv78TFqxKyUESfku1FugS9ondo
+aave,Aave,AAVE,crypto,all;majors,AAVE,AavE1kKKnesPw4MuRJmJ9jZs9QzEE8CPxQ3ViczUDfc1
+arsenal-fan-token,Arsenal FC,AFC,crypto,all;majors,AFC,Dst93spXQEXxFzwYbFrQRnFYBYpw7AzB2QyALEeP4NGQ
+avalanche-2,Avalanche,AVAX,crypto,all;majors,wAVAX,avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D
+billions-network,Billions Network Token,BILL,crypto,all;majors,BILL,Bi11Je4MH3PpyCNiuTAepRbsA5U6DK3DJy79ZFthddX
+blend,BLEND,BLEND,crypto,all;majors,BLEND,BWsnyEa1XtsNRdgPaDoA1WVUonF7BBGZTd2zc72NQsWT
+bnb,BNB,BNB,crypto,all;majors,BNB,9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa
+crypto-bpxxfrcx,Backpack,BP,crypto,all;majors,BP,BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy
+bitcoin,Bitcoin,BTC,crypto,all;majors,cbBTC,cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij
+usd-ai,USD.AI,CHIP,crypto,all;majors,CHIP,chipCAT7vi5CZtbZsn9z7iMPXvFwyAnKz3QFu8XVuHm
+chiliz,Chiliz,CHZ,crypto,all;majors,CHZ,6eftxVbSAunVEoxUWdGhPdxg5UdsJ8Wkwy5w5YFuxouw
+xmaquina,XMAQUINA,DEUS,crypto,all;majors,DEUS,7JoGUTeaXkjcMGa6xJP2idYNYiLreto1WnsACHnpw3Gd
+crypto-3ywtr9qq,DIME,DIME,crypto,all;majors,DIME,3ywtR9qQH4BuA7LSfLvEuW1gh6ha7EK18XwLbHvhryPZ
+delorean,DeLorean,DMC,crypto,all;majors,DMC,DmcqxT7WXgXhq2LHURQ2h8GA5PeCBuMTLeyaj6MXhf3p
+ethena,Ethena,ENA,crypto,all;majors,ENA,72QvBVwpxqmheEPfaCwWSWqEFsUy3rhWt6JhQBMNTwD1
+ethereum,Ethereum,ETH,crypto,all;majors,wETH,7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs
+hyperliquid,Hyperliquid,HYPE,crypto,all;majors,HYPE,98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g
+infinex,Infinex,INX,crypto,all;majors,INX,inxKXw9V2NDZE7hDijzpJaKKUb97NEPJDTCEEiYg4yY
+lighter,Lighter,LIT,crypto,all;majors,LIT,EicWvteVi2fWepEzS3FYWsnuPoP6caZfjnKqNvydLjCH
+megaeth,MegaETH,MEGA,crypto,all;majors,MEGA,megaA5QDK1qLXtjpvg9oCFMvxT9d5BCMrVTBddnM5kV
+monad,Monad,MON,crypto,all;majors,wMON,CrAr4RRJMBVwRsZtT62pEhfA9H5utymC2mVx8e7FreP2
+near,NEAR Protocol,NEAR,crypto,all;majors,NEAR,3ZLekZYq2qkZiSpnSvabjit34tUkjSwD1JFuW9as9wBG
+paris-saint-germain-fan-token,Paris Saint-Germain,PSG,crypto,all;majors,PSG,5eyib4qghYGHNh7VvxSFGYLFJSanjq9hug9fR52kksnm
+solana,Solana,SOL,crypto,all;majors;lsts,wSOL,So11111111111111111111111111111111111111112
+starknet,Starknet,STRK,crypto,all;majors,STRK,HsRpHQn6VbyMs5b5j5SV6xQ2VvpvvCCzu19GjytVSCoz
+sui,Sui,SUI,crypto,all;majors,SUI,suifhC9gU1VbJAPYPTBkHJyyyStKGLLYPVDTmPoqbvA
+bittensor,Bittensor,TAO,crypto,all;majors,TAO,taoC6xyv2v8tDLcev4uaGUgV4vdQsWJrGft2kcBRrBY
+tron,TRON,TRX,crypto,all;majors,TRX,GbbesPbaYh5uiAZSYNXTc7w9jty1rpg3P9L4JeN4LkKc
+uniswap,Uniswap,UNI,crypto,all;majors,UNI,uniHfuPhEQSrtpzXpJZDCSq53yaejKKpNhFUiKoHKHV
+zcash,Zcash,ZEC,crypto,all;majors,ZEC,A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS
+zora,Zora,ZORA,crypto,all;majors,ZORA,soKqZS9pASwBNS46G388nhK7XVtPaTyReffXEd3zora
+american-airlines-group,American Airlines Group,AAL,equity,all;stocks,AALon,9wYZetvT8J2ptfsRca5gzLBGvcUug38mp9yT3xaondo
+apple,Apple,AAPL,equity,all;stocks,AAPLx,XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp
+abbvie,AbbVie,ABBV,equity,all;stocks,ABBVon,MFerpBVGKZh2jXN7cbJdXRXQTp6j6pbSnSZrfWrondo
+airbnb,Airbnb,ABNB,equity,all;stocks,ABNBon,128qNYovdGv2YqayErcJgU7gDwbNVX1VuoxbtWz8ondo
+abbott,Abbott,ABT,equity,all;stocks,ABTx,XsHtf5RpxsQ7jeJ9ivNewouZKJHbPxhPoEy6yYvULr7
+archer-aviation,Archer Aviation,ACHR,equity,all;stocks,ACHRon,KcCVQxG9LhFYP5o9DWFKTFgFShPPQkDEemVbiFyondo
+accenture,Accenture,ACN,equity,all;stocks,ACNx,Xs5UJzmCRQ8DWZjskExdSQDnbE6iLkRu2jjrRAB1JSU
+adobe,Adobe,ADBE,equity,all;stocks,ADBEon,12Rh6JhfW4X5fKP16bbUdb4pcVCKDHFB48x8GG33ondo
+analog-devices,Analog Devices,ADI,equity,all;stocks,ADIon,LmTMwmZLNZszn3qpjmnbhfP12U4qWDivaEBwSBSondo
+applied-materials,Applied Materials,AMAT,equity,all;stocks,AMATon,7eRX747PSbVtGVx3qD5UFdkNM2BfTy86ikUiCMhondo
+amber,Amber,AMBR,equity,all;stocks,AMBRx,XsaQTCgebC2KPbf27KUhdv5JFvHhQ4GDAPURwrEhAzb
+amc-entertainment,AMC Entertainment,AMC,equity,all;stocks,AMCon,C9xNaNujcF1a5fidWAAFReFYqhLRVbyk4yPyGqzondo
+amd,AMD,AMD,equity,all;stocks,AMDon,14diAn5z8kjrKwSC8WLqvBqqe5YmihJhjxRxd8Z6ondo
+amgen,Amgen,AMGN,equity,all;stocks,AMGNon,SS6AEWhzRrxhL2cXzKKjhFt3rCzmHHGKmFyugDTondo
+amazon,Amazon,AMZN,equity,all;stocks,AMZNx,Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg
+pre-prestj4y,Anduril PreStocks,ANDURIL,equity,all;stocks,ANDURIL,PresTj4Yc2bAR197Er7wz4UUKSfqt6FryBEdAriBoQB
+arista-networks,Arista Networks,ANET,equity,all;stocks,ANETon,Cq6QtvHpXbJWtFaiMhUDtHy8YVZ95gcD1oZ1cohondo
+pre-pren1fvf,Anthropic PreStocks,ANTHROPIC,equity,all;stocks,ANTHROPIC,Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw
+apollo-global-management,Apollo Global Management,APO,equity,all;stocks,APOon,14VXAhoa1R74vi1ZuiQyGLJrnDMfoFBPJSCpGVz3ondo
+applovin,AppLovin,APP,equity,all;stocks,APPx,XsPdAVBi8Zc1xvv53k4JcMrQaEDTgkGqKYeh7AYgPHV
+arm-holdings-plc,Arm Holdings plc,ARM,equity,all;stocks,ARMon,15SsCZqCsM9fZGhTmP4rdJTPT9WGZKazDSsgeQ8ondo
+asml,ASML,ASML,equity,all;stocks,ASMLon,1eLZPRsn8bAKmoxsqDMH9Q2m2k7GMNp6RLSQGm8ondo
+ast-spacemobile,AST SpaceMobile,ASTS,equity,all;stocks,ASTSx,XsR4LAtaBgTKTRUhiijY1ba13nx4bepeEcag2Pr4dZ1
+broadcom,Broadcom,AVGO,equity,all;stocks,AVGOx,XsgSaSvNSqLTtFuyWPBhK9196Xb9Bbdyjj4fH3cPJGo
+american-express,American Express,AXP,equity,all;stocks,AXPon,1WxT6NdK7uqpfXuKpALxL2n3f7Rq61XXeHA8UM4ondo
+astrazeneca,AstraZeneca,AZN,equity,all;stocks,AZNx,Xs3ZFkPYT2BN7qBMqf1j1bfTeTm1rFzEFSsQ1z3wAKU
+boeing,Boeing,BA,equity,all;stocks,BAon,1YVZ4LGpq8CAhpdpm3mgy7GgPb83gJczCpxLUQ3ondo
+alibaba,Alibaba,BABA,equity,all;stocks,BABAon,1zvb9ELBFShBCWKEk5jRTJAaPAwtVt7quEXx1X4ondo
+bank-of-america,Bank of America,BAC,equity,all;stocks,BACon,Wk8gC6iTNp8dqd4ghkJ3h1giiUnyhykwHh7tYWjondo
+bigbear-ai-holdings,BigBear.ai Holdings,BBAI,equity,all;stocks,BBAIon,YXE7mph6XhsgnyezkMEcTuohSuWhbLWfwx2Hh6mondo
+baidu,Baidu,BIDU,equity,all;stocks,BIDUon,54CoRF2FYMZNJg9tS36xq5BUcLZ7rju1r59jGc2ondo
+bilibili,Bilibili,BILI,equity,all;stocks,BILIon,14kLsQVmc64qZexYuR4XGop9y8BeMkd77pJUm1Rhondo
+ishares-flexible-income-active-etf,iShares Flexible Income Active ETF,BINC,equity,all;stocks,BINCon,mhZ69E1vDnAsQJXAwarLYSX5tmgeMajXBJ2rXAcondo
+booking,Booking,BKNG,equity,all;stocks,BKNGx,XseQvfvuDT3KHKiwPNW1gcjfHbFjEMVTV5NJzDdNQmu
+blackrock,BlackRock,BLK,equity,all;stocks,BLKon,5H1VpMzRuoNtRbPTRCz35ETtEUtnkt8hJuQb9v7ondo
+bullish,Bullish,BLSH,equity,all;stocks,BLSHon,A9PFmw9Hu8zzxDUoU351pio1E1XWBWBfWnjT9qoondo
+bitmine,Bitmine,BMNR,equity,all;stocks,BMNRx,XsrBCwaH8c46xiqXBChzobgufRKxQxAWUWbndgBNzFn
+berkshire-hathaway,Berkshire Hathaway,BRK.B,equity,all;stocks,BRK.Bx,Xs6B6zawENwAbWVi7w92rjazLuAr5Az59qgWKcNb45x
+bit-digital,Bit Digital,BTBT,equity,all;stocks,BTBTx,XsPLBFy59Q3hY59KLAJur8QyvziMF4xUxGTxXqXE7cT
+b2gold,B2Gold,BTG,equity,all;stocks,BTGon,cBnVXDyZgaaLZM18wAmqsUKnRUFAEJWbq6VuUoaondo
+kanzhun,Kanzhun,BZ,equity,all;stocks,BZon,doPqjCxi6UkANkvMz5fSuYGEo5PGppVpTZMeB5vondo
+citigroup,Citigroup,C,equity,all;stocks,Con,PjtfUiw6Hwd8PZ94EcUw8mBSYxp7SjjzSLeNTDKondo
+caterpillar,Caterpillar,CAT,equity,all;stocks,CATon,AErxJJxGbc9cZzZoZepN62BNfg5RXns8tmEc3Zpondo
+constellation-energy,Constellation Energy,CEG,equity,all;stocks,CEGon,7NWHifsBnn9DimUeNnsHdEXkTZhXmJTiXxcCngBondo
+cipher-mining,Cipher Mining,CIFR,equity,all;stocks,CIFRon,WNZBSkNBNP3Ct1pcFn6Fu4sZQFhnu48EsM9voCEondo
+cleanspark,CleanSpark,CLSK,equity,all;stocks,CLSKx,Xsn3H7ACEpSF2ULxeiD6kW4jRZXpurh8ZPttyfoS56W
+comcast,Comcast,CMCSA,equity,all;stocks,CMCSAx,XsvKCaNsxg2GN8jjUmq71qukMJr7Q1c5R2Mk9P8kcS8
+chipotle,Chipotle,CMG,equity,all;stocks,CMGon,5owVsVFSHACQuippFYdLp3qWRobp2EGcwxMmsr6ondo
+capital-one,Capital One,COF,equity,all;stocks,COFon,R2uDbMtmHq5xSS5SserrovdRKdpiqnVBCd2AHLhondo
+coinbase,Coinbase,COIN,equity,all;stocks,COINx,Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu
+conocophillips,ConocoPhillips,COP,equity,all;stocks,COPon,X68p9qTpEMkR1TLpXUP2ZJo8PG4Qge2Y2ZLdjA2ondo
+core-scientific,Core Scientific,CORZ,equity,all;stocks,CORZx,XsBGEXxbBcuu8Nrokj14G8v4ezT3JYWWLneTzXK8t6Z
+costco,Costco,COST,equity,all;stocks,COSTon,6btaz134wjHkR8sqhAYrtSM6tavftfxnRvnyMd8ondo
+coupang,Coupang,CPNG,equity,all;stocks,CPNGon,NKyzy31w2J7odLb2CW3Ft4fpKXkW3LBt1pvpkVLondo
+circle,Circle,CRCL,equity,all;stocks,CRCLx,XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1
+salesforce,Salesforce,CRM,equity,all;stocks,CRMon,7D7ukbcnUNYt7Et5vtsDZhAy28MKu9pkHka1Hp9ondo
+crowdstrike,CrowdStrike,CRWD,equity,all;stocks,CRWDon,cdKfoNjbXgnSuxvoajhtH3uixfZhq1YXhQsS1Rwondo
+cisco,Cisco,CSCO,equity,all;stocks,CSCOx,Xsr3pdLQyXvDJBFgpR5nexCEZwXvigb8wbPYp4YoNFf
+chevron,Chevron,CV,equity,all;stocks,CVon,7tgKziACteG26VjV5xKufojKxwTgCFyTwmWUmz5ondo
+carvana,Carvana,CVNA,equity,all;stocks,CVNAon,FGmUDXqA3AbWfo5b3NUcsvwoUFCF4tr9ea6uercondo
+doordash,DoorDash,DASH,equity,all;stocks,DASHon,83P1gCFBZfGRCwJuBt9juxJKEsZwejJoG66eTZ6ondo
+invesco-db-commodity-index-tracking-fund,Invesco DB Commodity Index Tracking Fund,DBC,equity,all;stocks,DBCon,td1aY5AvYQuwGD75qNq9aPipMexraN9mQXJwqifondo
+deere,Deere,DE,equity,all;stocks,DEon,CqQyAZjB9LGFTG95eiadGTkfhd9QA12ProeKsQmondo
+defi-development,DeFi Development,DFDV,equity,all;stocks,DFDVx,Xs2yquAgsHByNzx68WJC55WHjHBvG9JsMB7CWjTLyPy
+wisdomtree-us-quality-dividend-growth-fund,WisdomTree US Quality Dividend Growth Fund,DGRW,equity,all;stocks,DGRWon,gnoSQSNTNZHViqVfxCcPDVxcRA29mrJL7C6JqYLondo
+danaher,Danaher,DHR,equity,all;stocks,DHRx,Xseo8tgCZfkHxWS9xbFYeKFyMSbWEvZGFV1Gh53GtCV
+disney,Disney,DIS,equity,all;stocks,DISon,mJf1xT3suXtkXBCfZcE9oUUuyxkvSgqYBWiX7v1ondo
+denison-mines,Denison Mines,DNN,equity,all;stocks,DNNon,12J2LD3tuLfdiVKnWZMHRMrbnXDY9rM4yqVLUa5yondo
+duolingo,Duolingo,DUOL,equity,all;stocks,DUOLx,Xs1CqRVt2mGVfMSHf7M6cDhkjpw8HDF14XbQNzDnGg4
+ebay,eBay,EBAY,equity,all;stocks,EBAYx,XsDYSbgLh3T7oh59UmRX1F5WjDgJD3nmzACaG5LR1MB
+equinix,Equinix,EQI,equity,all;stocks,EQIon,aheEdmuryJU8ymy8LjYheZH5i2BW1UMsfuWQKD2ondo
+expedia,Expedia,EXPE,equity,all;stocks,EXPEx,XsFj75v4Tw8TWSDaDoVTHF8RAjEEkmUeKgoRjB9DHsf
+ford-motor,Ford Motor,F,equity,all;stocks,Fon,5hT2o25X9tGXipwhLckaUdgnxrZ6Y8eiUwdhpLeondo
+figma,Figma,FIG,equity,all;stocks,FIGon,aLDdFsr3VTUQaHFK6yNvQxztvxQ8nxW4AMuSGC7ondo
+figure-technology-solutions,Figure Technology Solutions,FIGR,equity,all;stocks,FIGRon,ZmHxc6Gt27RJKxD2ay6UL4n9yQ7mKAq4XZQUeVhondo
+first-trust-global-tactical-commodity-strategy-fund,First Trust Global Tactical Commodity Strategy Fund,FTGC,equity,all;stocks,FTGCon,ivBnfPTyuHDNWmMSnbavckhJK6SHZW8h77nZKsEondo
+bitfufu,BitFuFu,FUFU,equity,all;stocks,FUFUx,XsHt1AVPshZpfFWGGpooJ8tdeGknUQVJ9CwhvKrnZrw
+futu-holdings,Futu Holdings,FUTU,equity,all;stocks,FUTUon,Ao5rKFRQ54W3DKSAtqfhBRPNHewwWRLNLao2JL9ondo
+general-electric,General Electric,GE,equity,all;stocks,GEon,aTBfDuLRqYHBiG82bHA7DzwjSDTFre2dRtGH3S5ondo
+gemini-space-station,Gemini Space Station,GEMI,equity,all;stocks,GEMIon,NrTdGMA3ujUvWXkwXyZKnhoByb32KTjRh5Vo47yondo
+galaxy-digital,Galaxy Digital,GLXY,equity,all;stocks,GLXYx,Xs3c2aZenyRQwXjki5MDxJEJ2km27ef2rWQMFWx7QKJ
+gamestop,GameStop,GME,equity,all;stocks,GMEx,Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc
+alphabet,Alphabet,GOOGL,equity,all;stocks,GOOGLx,XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN
+grab-holdings,Grab Holdings,GRAB,equity,all;stocks,GRABon,m9GcsVgdjaL3KsdtSFHimnhtsUMpTHkjtwEG4Tzondo
+grindr,Grindr,GRND,equity,all;stocks,GRNDon,Gc1aT3ay7FXL3qdAW7cNSXYPDsGavy7qiACuxwxondo
+goldman-sachs,Goldman Sachs,GS,equity,all;stocks,GSon,BchJRy2snmhJZf3rQ9LJ3ePs2BGfYgfvQNo31d2ondo
+home-depot,Home Depot,HD,equity,all;stocks,HDon,MtEXKVN3Pcggy8MPA3eJr15H6SK3RXheScqj9qtondo
+hims-and-hers-health,Hims & Hers Health,HIMS,equity,all;stocks,HIMSon,bdh3njeo19d2TBLAKTGvCWdSoArfVw8uZBAJHY4ondo
+honeywell,Honeywell,HON,equity,all;stocks,HONx,XsRbLZthfABAPAfumWNEJhPyiKDW6TvDVeAeW7oKqA2
+robinhood,Robinhood,HOOD,equity,all;stocks,HOODx,XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg
+helius-medical,Helius Medical,HSDT,equity,all;stocks,HSDTx,XsicTFC7G68d74FaYDctWggkKDgkMx8LpNoFNr81TrF
+hut-8,Hut 8,HUT,equity,all;stocks,HUTx,XsG5QyZTQnVSpsXRpD92K5ZGoxXjsmfTyx7fW7r18DV
+iboxx-high-yield-corporate-bond-etf,iBoxx $ High Yield Corporate Bond ETF,HYG,equity,all;stocks,HYGon,c5ug15fwZRfQhhVa6LHscFY33ebVDHcVCezYpj7ondo
+ibm,IBM,IBM,equity,all;stocks,IBMon,C8bZkgSxXkyT1RgxByp2teJ24hgimPLoyEYoNa9ondo
+intel,Intel,INTC,equity,all;stocks,INTCon,cJpUMp5R7rZ6fGeLHbHhrRuJzK9mkyKDjZqNpT3ondo
+intuit,Intuit,INTU,equity,all;stocks,INTUon,CozoH5HBTyyeYSQxHcWpGzd4Sq5XBaKzBzvTtN3ondo
+iren,IREN,IREN,equity,all;stocks,IRENon,13QHuepdhtJ3urNsV9i1hdL8nQoca2G7ZaLzb5FYondo
+intuitive-surgical,Intuitive Surgical,ISRG,equity,all;stocks,ISRGon,1MGRpPrkhEsCm2GCWD3rsvEU77xTTLAzfKXeFgFondo
+janus-henderson-aaa-clo-etf,Janus Henderson AAA CLO ETF,JAAA,equity,all;stocks,JAAAon,KZtqx9BJbpcGY7vdzhqPXM3ECKChxE5YhXaDiwRondo
+jd-com,JD.com,JD,equity,all;stocks,JDon,E1aUS5nyv7kaBzdQzPVJW5zfaMgoUJpKYzdnFS2ondo
+johnson-and-johnson,Johnson & Johnson,JNJ,equity,all;stocks,JNJon,KUXt7LzHWSQXp5eyqMZRxWjAP6yM8BUh4LRHwiwondo
+jpmorgan-chase,JPMorgan Chase,JPM,equity,all;stocks,JPMx,XsMAqkcKsUewDrzVkait4e5u4y8REgtyS7jWgCpLV2C
+pre-prelwgkk,Kalshi PreStocks,KALSHI,equity,all;stocks,tKalshi,TKLSidmLVt3cqGaaodG8tyRzoANfQwoh67AccjmubeZ
+kla,KLA,KLAC,equity,all;stocks,KLACon,149o8ppQf9SzKCKXZ4v3dzHkwumvtQSRzSEkr29uondo
+coca-cola,Coca-Cola,KO,equity,all;stocks,KOx,XsaBXg8dU5cPM6ehmVctMkVqoiRG2ZjMo1cyBJ3AykQ
+li-auto,Li Auto,LI,equity,all;stocks,LIon,v12TwfofSbvVqQ5N5KGG4d3J8rtEi4BjGfn2apyondo
+linde,Linde,LIN,equity,all;stocks,LINx,XsSr8anD1hkvNMu8XQiVcmiaTP7XGvYu7Q58LdmtE8Z
+eli-lilly,Eli Lilly,LLY,equity,all;stocks,LLYon,eGGxZwNSfuNKRqQLKaz2hc4QkA2mau7skyxPdj7ondo
+lockheed,Lockheed,LMT,equity,all;stocks,LMTon,EoReHwUnGGekbXFHLj5rbCVKiwWqu32GrETMfw4ondo
+lowe-s,Lowe's,LOW,equity,all;stocks,LOWon,edLdFJVVR532qhcrNTJjLAmhmyV7NsctbWVokMBondo
+lam-research,Lam Research,LRC,equity,all;stocks,LRCon,wFJoeEYpKg9oRhyJy6BWTT3J95gmXBLvoeikDQNondo
+lululemon,Lululemon,LULU,equity,all;stocks,LULUx,XsDmtC5EpfzJoCzDN2SJP98xpCsSR2CqdZauJSvHNXT
+mastercard,Mastercard,MA,equity,all;stocks,MAon,EsVHcyRxXFJCLMiuYLWhoDygrNe1BJGpYeZ17X7ondo
+mara,MARA,MARA,equity,all;stocks,MARAon,ETCJUmuhs5aY62xgEVWCZ5JR8KPdeXUaJz3LuC5ondo
+mcdonald-s,McDonald's,MCD,equity,all;stocks,MCDx,XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2
+medtronic,Medtronic,MDT,equity,all;stocks,MDTx,XsDgw22qRLTv5Uwuzn6T63cW69exG41T6gwQhEK22u2
+mercadolibre,MercadoLibre,MELI,equity,all;stocks,MELIon,EWwdgGshGngcMpDV34pWZRSu5bkAuiKuKTTHKQ8ondo
+meta,Meta,META,equity,all;stocks,METAx,Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu
+monster,Monster,MNST,equity,all;stocks,MNSTx,XsyusqQvb8RDULsY9szwvUv2CxrDKa642w7kecZPdRM
+mp-materials,MP Materials,MP,equity,all;stocks,MPon,XwFm5GiKPVTvPiEbQpdc6vJbFEpsUXRMf6TcSxnondo
+merck,Merck,MRK,equity,all;stocks,MRKx,XsnQnU7AdbRZYe2akqqpibDdXjkieGFfSkbkjX1Sd1X
+moderna,Moderna,MRNA,equity,all;stocks,MRNAon,14VP7DvCAdBCc5XGNZkPt6zhtPzJrWWS64Koxtxyondo
+marvell,Marvell,MRVL,equity,all;stocks,MRVLx,XsuxRGDzbLjnJ72v74b7p9VY6N66uYgTCyfwwRjVCJA
+microsoft,Microsoft,MSFT,equity,all;stocks,MSFTx,XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX
+microstrategy,MicroStrategy,MSTR,equity,all;stocks,MSTRx,XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ
+mastec,MasTec,MTZ,equity,all;stocks,MTZon,R3ywbVQ5t8LNmjQsn2Ngv43dSqyZscQwNag9G3Eondo
+micron,Micron,MU,equity,all;stocks,MUon,Fz9edBpaURPPzpKVRR1A8PENYDEgHqwx5D5th28ondo
+nextera-energy,NextEra Energy,NEE,equity,all;stocks,NEEon,t7eN6cGwRMFaZvsNW2SmVwkedmHtDdrxA4ycNE5ondo
+netflix,Netflix,NFL,equity,all;stocks,NFLx,XsEH7wWfJJu2ZT3UCFeVfALnVA6CP5ur7Ee11KmzVpL
+sprott-nickel-miners-etf,Sprott Nickel Miners ETF,NIKL,equity,all;stocks,NIKLon,V8LRV7kWjrx6Prke9oHEHNUiR122BVtyuPciTCTondo
+nio,NIO,NIO,equity,all;stocks,NIOon,yQ37dFiGAbzrb2FRAEhGNzRy5zFfoYGWYhAepFEondo
+nike,Nike,NKE,equity,all;stocks,NKEon,g646pcdG2Rt5DH9WZzL7VVnVDWCCMTTrnktwE74ondo
+servicenow,ServiceNow,NOW,equity,all;stocks,NOWon,G7pTVoSECz5RQWubEnTP7AC83KHUsSyoiqYR1R2ondo
+netease,NetEase,NTES,equity,all;stocks,NTESon,YeK2TdPtGLAme3Phg4pb1GBN2YxKgX5UNVyD4asondo
+nvidia,NVIDIA,NVDA,equity,all;stocks,NVDAx,Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh
+novo-nordisk,Novo Nordisk,NVO,equity,all;stocks,NVOon,GeV7S8vjP8qdYZpdGv2Xi6e7MUMCk8NAAp2z7g5ondo
+oklo,Oklo,OKLO,equity,all;stocks,OKLOon,m6oDLvJT7rY7M1TxuLWP3pWmAPg2cCWDQR1NKiEondo
+on-semiconductor,ON Semiconductor,ON,equity,all;stocks,ONon,13qtwy5fZi9Przz14pzo9xqFSr8QHmLyUpUCvP1xondo
+ondas-holdings,Ondas Holdings,ONDS,equity,all;stocks,ONDSon,7qy1j4Mechfyr6uAST3djH4vk4kiEYC2cjEytXdondo
+open,OPEN,OPEN,equity,all;stocks,OPENx,XsGtpmjhmC8kyjVSWL4VicGu36ceq9u55PTgF8bhGv6
+pre-prewejye,OpenAI PreStocks,OPENAI,equity,all;stocks,OPENAI,PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF
+opera,Opera,OPRA,equity,all;stocks,OPRAon,gbHFTMkuMQUy5xrgoCBdaQ2XYvNyjWAYcnRPh9Condo
+oracle,Oracle,ORCL,equity,all;stocks,ORCLx,XsjFwUPiLofddX5cWFHW35GCbXcSu1BCUGfxoQAQjeL
+oscar-health,Oscar Health,OSCR,equity,all;stocks,OSCRon,ThwGDsXZ6iKubWuEQjmDxGwF3bUERDGbBXvcbjFondo
+occidental-petroleum,Occidental Petroleum,OXY,equity,all;stocks,OXYon,1GNFMryQ6c9ZpMhgNimmsbtgYM21qnBJgRAFoNiondo
+abrdn-physical-palladium-shares-etf,abrdn Physical Palladium Shares ETF,PALL,equity,all;stocks,PALLon,P7hTXnKk2d2DyqWnefp5BSroE1qjjKpKxg9SxQqondo
+palo-alto-networks,Palo Alto Networks,PANW,equity,all;stocks,PANWon,M7hVQomhw4Q2D2op3HvBrZjHu9SryjNvD5haEZ1ondo
+petrobras,Petrobras,PBR,equity,all;stocks,PBRon,GRciFCqJ5y2hbiD6U5mGkohY65BZTXGuGUrCqf7ondo
+pgande,PG&E,PCG,equity,all;stocks,PCGon,UP5s1srLaHDc4SwJqLPa3A48x5R7ofN3hZWxWEZondo
+invesco-optimum-yld-dvsfd-cmd-str-no-k-1-etf,Invesco Optimum Yld Dvsfd Cmd Str No K-1 ETF,PDBC,equity,all;stocks,PDBCon,M6agiXbNgy8Xon9ngiW4ZDPbMFcNCTMkMMkshZyondo
+pdd-holdings,PDD Holdings,PDD,equity,all;stocks,PDDon,PnjETBCLC318DRejo9cMQKAmET9PvW8AEFGWMNtondo
+pepsico,PepsiCo,PEP,equity,all;stocks,PEPon,gud6b3fYekjhMG5F818BALwbg2vt4JKoow59Md9ondo
+pfizer,Pfizer,PFE,equity,all;stocks,PFEon,Gwh9fPsX1qWATXy63vNaJnAFfwebWQtZaVmPko6ondo
+procter-and-gamble,Procter & Gamble,PG,equity,all;stocks,PGx,XsYdjDjNUygZ7yGKfQaB6TxLh2gC6RRjzLtLAGJrhzV
+pinterest,Pinterest,PINS,equity,all;stocks,PINSon,sxyg1VTSzy5zYANUK7hntNtmFAWoXGJq95AcHuVondo
+planet-labs,Planet Labs,PL,equity,all;stocks,PLx,XsMJtFbb8BwzQtck3oRXyAfs7SAPRuTXnSEDNd7BAVz
+palantir,Palantir,PLTR,equity,all;stocks,PLTRx,XsoBhf2ufR8fTyNSjqfU71DYGaE6Z3SUGAidpzriAA4
+plug-power,Plug Power,PLUG,equity,all;stocks,PLUGon,TnfswqdE1jAJ8sfnf5J7kSVLEH1cfpAYZ8MWmKfondo
+philip-morris,Philip Morris,PM,equity,all;stocks,PMx,Xsba6tUnSjDae2VcopDB6FGGDaxRrewFCDa5hKn5vT3
+pre-pre8arem,Polymarket PreStocks,POLYMARKET,equity,all;stocks,POLYMARKET,Pre8AREmFPtoJFT8mQSXQLh56cwJmM7CFDRuoGBZiUP
+proshares-short-qqq,ProShares Short QQQ,PSQ,equity,all;stocks,PSQon,qKtU9A7ij34XmtxaSzYfxCpkgAZzzFsqnUb2kW2ondo
+paypal,PayPal,PYPL,equity,all;stocks,PYPLon,hM7B3UQTTR81mS27SxDDPzBbjejmo8fnpFjzgv9ondo
+d-wave-quantum,D-Wave Quantum,QBTS,equity,all;stocks,QBTSon,hqJXutLF6f7DxStrWCrnZDfXzbNTZmvi3KheVi6ondo
+qualcomm,Qualcomm,QCOM,equity,all;stocks,QCOMon,hrmX7MV5hifoaBVjnrdpz698yABxrbBNAcWtWo9ondo
+roblox,Roblox,RBL,equity,all;stocks,RBLx,Xss5RAku5EH6UViFdvW7ss9xQjwQLsrs2opPMhb3k43
+reddit,Reddit,RDDT,equity,all;stocks,RDDTon,HXFrTf9v9NdjGUTnx4sojR3Cf92hoBsQFUxKTN7ondo
+vaneck-rare-earth-and-strategic-metals-etf,VanEck Rare Earth and Strategic Metals ETF,REM,equity,all;stocks,REMon,tiitb2Z1HtpB2DpVr6V7tdCFS3jmTinLeuGj9EVondo
+rigetti-computing,Rigetti Computing,RGTI,equity,all;stocks,RGTIon,dwEPNKQab3iwRmjGvZPXhAmws1W5NsQGwuXwi8oondo
+riot-platforms,Riot Platforms,RIOT,equity,all;stocks,RIOTon,i6f3DvZBuLpnGSqS8x6WPeStJ7jNe5KewD6afD5ondo
+rivian-automotive,Rivian Automotive,RIVN,equity,all;stocks,RIVNon,AXRsYFt7TXNQ3DcY6BkvRgPV6VsYMURyDtaeudjondo
+rocket-lab,Rocket Lab,RKLB,equity,all;stocks,RKLBx,XsKSh3QDynp6oms9yHjZXbZo3pKzUBoqUFKPHS2g9Bh
+rtx,RTX,RT,equity,all;stocks,RTon,12BvLZtzjdssAycxPeBQUjukhmgQpULAvy6SroYdondo
+sharplink-gaming,SharpLink Gaming,SBET,equity,all;stocks,SBETon,iLDu2jjp2i3Uqc2Vm7K7GLiUj3hR4Un49MtD7c4ondo
+starbucks,Starbucks,SBU,equity,all;stocks,SBUon,iPFqjcZQTNMNXA4kbShbMhfAVD8yr8Uq9UtXMV6ondo
+charles-schwab,Charles Schwab,SCHW,equity,all;stocks,SCHWon,cnc6M1zXLdrGR5LAQVcaJDfgezMiVWNtGQsVy1Kondo
+ishares-0-3-month-treasury-bond-etf,iShares 0-3 Month Treasury Bond ETF,SGOV,equity,all;stocks,SGOVon,HjrN6ChZK2QRL6hMXayjGPLFvxhgjwKEy135VRjondo
+shopify,Shopify,SHOP,equity,all;stocks,SHOPon,ivdDracs2s7jCP698dJXKSEQdVrNj9hasJL1Uq1ondo
+super-micro-computer,Super Micro Computer,SMCI,equity,all;stocks,SMCIon,jLca79XzcewRuBZyaJxVxuKpUHcEix1X4CP1RP9ondo
+snap,Snap,SNAP,equity,all;stocks,SNAPon,a2cXfonVgQ6cKB4Lm8YZsPry39VZSA562bwmRSiondo
+snowflake,Snowflake,SNOW,equity,all;stocks,SNOWon,JmFLCBwoNvcXy6B2VqABg6m784ubkXpaEx3p7S5ondo
+southern,Southern,SO,equity,all;stocks,SOon,aKzjn2ZdWySSGPSSDTY2HUpcSCmemSahTXihrpyondo
+sofi-technologies,SoFi Technologies,SOFI,equity,all;stocks,SOFIon,mqL8yXQpeSvc7NgrAtLLPtRvUiWyLoG5RWLv16iondo
+soundhound-ai,SoundHound AI,SOUN,equity,all;stocks,SOUNon,vE2qArmjto6VfeMngyGAnzp2ipLYeXsxiARDnnXondo
+spacex,SpaceX,SPACEX,equity,all;stocks,SPACEX,PreANxuXjsy2pvisWWMNB6YaJNzr7681wJJr2rHsfTh
+virgin-galactic,Virgin Galactic,SPCE,equity,all;stocks,SPCEx,Xsgrm4D6VBTfDx5bs7GNdjtmWDgZ8V79r3YpsYwf5py
+sandp-global,S&P Global,SPGI,equity,all;stocks,SPGIon,JrTYw7A9jihX5TwpRStYviEbsYf2X2VJpZ13719ondo
+spotify,Spotify,SPOT,equity,all;stocks,SPOTon,jzCvs2Pk8tDcfsFRqnEMjurgaQW4iQfEkandUR8ondo
+strcon,Strategy Stretch Preferred (Ondo Tokenized),STRCon,equity,all;stocks,STRCon,y6kSRF4i9tfMMjZziPHtQE1PeUS6bWEHTzZMFgXondo
+atandt,AT&T,T,equity,all;stocks,Ton,WKMZummev5UcXz5nNKQZvTD6QjNSM2X58uwmDReondo
+trip-com-group,Trip.com Group,TCOM,equity,all;stocks,TCOMon,9PMjLqd8zPdKkJUXarnit5t7tPL3cCscwHzy7ATondo
+tempus-ai,Tempus AI,TEM,equity,all;stocks,TEMx,XsBgbNRDujfznQq8P4NLKEkRTbPxUVt4v1xwkDzMMtQ
+target,Target,TGT,equity,all;stocks,TGTx,XsjXR5jf4d4GNpJXwLvEBTMwK3ZYro2qZGgvUCzyJrx
+ishares-tips-bond-etf,iShares TIPS Bond ETF,TIP,equity,all;stocks,TIPon,k6BPp2Xmf2TYgrZiUyWfUoZBKeqaDbvPoAVgSx2ondo
+talen-energy,Talen Energy,TLN,equity,all;stocks,TLNon,RTb54gpqAx6RpLAHRGnqQ3ciQ845CHqhg21ZzEJondo
+toyota,Toyota,TM,equity,all;stocks,TMon,kbmF7ERJWMaaDswMprrH9gHSLya5D2RMBNgKqg3ondo
+thermo-fisher,Thermo Fisher,TMO,equity,all;stocks,TMOon,T699bgtXQw4CJ59rQ4VzLsupVQUzoL5RmuhHnKrondo
+t-mobile,T-Mobile,TMUS,equity,all;stocks,TMUSx,XswCi2U1G6Ppbw1QhG45yKb8UKuR1FKLJrquv2FZSD4
+ton,TON,TON,equity,all;stocks,TONx,XscE4GUcsYhcyZu5ATiGUMmhxYa1D5fwbpJw4K6K4dp
+tesla,Tesla,TSLA,equity,all;stocks,TSLAx,XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB
+tsmc,TSMC,TSM,equity,all;stocks,TSMon,keybg184d4vyXeQdFqs4o99YsMg7xBthxTJ6Ky3ondo
+texas-instruments,Texas Instruments,TXN,equity,all;stocks,TXNon,81xLFvCzFaUM3KDxSHC75pXu3RPCeSeCbmGBY8aondo
+uber,Uber,UBER,equity,all;stocks,UBERon,KJNeFW3kk3ycPjXpC6cbuyckjeYHacc2ekhtAi5ondo
+unitedhealth,UnitedHealth,UNH,equity,all;stocks,UNHx,XszvaiXGPwvk2nwb3o9C1CX4K6zH8sez11E6uyup6fe
+united-states-oil-fund,United States Oil Fund,USO,equity,all;stocks,USOon,rpydAzWdCy85HEmoQkH5PVxYtDYQWjmLxgHHadxondo
+visa,Visa,V,equity,all;stocks,Vx,XsqgsbXwWogGJsNcVZ3TyVouy2MbTkfCFhCGGGcQZ2p
+vertiv,Vertiv,VRT,equity,all;stocks,VRTon,MkN2TZSYTFBdMRLf9EVcfhstTwnazH8knd9hpepondo
+vistra,Vistra,VST,equity,all;stocks,VSTon,h6MW8GFpfzxFa1JNn6hZNnBF3t4fj9SHAXKy6LXondo
+vanguard-value-etf,Vanguard Value ETF,VTV,equity,all;stocks,VTVon,KuiYLPVq65qixD9TgvxBC576C4gG6vVTCdbh2zFondo
+verizon,Verizon,VZ,equity,all;stocks,VZon,igu1coP6n3GPaWmbd8J9Z7UAyLpV254uQFFNfydondo
+warner-bros,Warner Bros,WBD,equity,all;stocks,WBDx,XsZUSqxAXKJkEimvD4CoVvEb4WUC92TFgj5zRtBxFeL
+wendy-s,Wendy's,WEN,equity,all;stocks,WENx,Xs4uNhvBDAcp2mz3g9XR5q3vzLgmF1ANWxJgWk2d5u3
+wells-fargo,Wells Fargo,WFC,equity,all;stocks,WFCon,L6ZE5qCpVVSqLePz64CrwkgyWoPF9M7tB8BeFH4ondo
+walmart,Walmart,WMT,equity,all;stocks,WMTx,Xs151QeqTCiuKtinzfRATnUESM2xTU6V9Wy8Vy538ci
+terawulf,TeraWulf,WULF,equity,all;stocks,WULFon,exYfSJt6Fgfhfnp3bAD4roYy97hLF9npjYaLyEXondo
+exxon-mobil,Exxon Mobil,XOM,equity,all;stocks,XOMx,XsaHND8sHyfMfsWPj6kSdd5VwvCayZvjYgKmmcNL5qh
+block,Block,XYZ,equity,all;stocks,XYZon,BWxe2FVciUbwrCUZQPUKiREBh5LmVa5AiUqNLAkondo
+ishares-msci-emerging-markets-etf,iShares MSCI Emerging Markets ETF,EEM,etf,all;etfs,EEMon,916SDKz7y5ZcEZC9CtnQ5Djs1Y8Yv3UAPb6bak8ondo
+ishares-msci-eafe-etf,iShares MSCI EAFE ETF,EFA,etf,all;etfs,EFAon,AbvryMGnaba9oADMZk8Vp2Av6MtczsncGyfWaC4ondo
+ishares-core-msci-eafe-etf,iShares Core MSCI EAFE ETF,IEFA,etf,all;etfs,IEMGon,cdVNL7wK8mf1UCDqM6zdrziRv4hmvqWhXeTcck2ondo
+core-msci-em,Core MSCI EM,IEMG,etf,all;etfs,IEMGx,XsFnZawJdLdXfBSEt5Vw29K5vdBiHotdPLjUPafpfHs
+ishares-core-sandp-midcap-etf,iShares Core S&P MidCap ETF,IJH,etf,all;etfs,IJHon,cfPLN9WXD2BTkbZhRZMVXPmVSiRo44hJWRtnaC8ondo
+ishares-core-sandp-total-us-stock-market-etf,iShares Core S&P Total US Stock Market ETF,ITOT,etf,all;etfs,ITOTon,CPWkMURVvcnX8hGjqCTb8i5LkzV3VSvyk7SeJi8ondo
+ishares-core-sandp-500-etf,iShares Core S&P 500 ETF,IVV,etf,all;etfs,IVVon,CqW2pd6dCPG9xKZfAsTovzDsMmAGKJSDBNcwM96ondo
+ishares-russell-1000-growth-etf,iShares Russell 1000 Growth ETF,IWF,etf,all;etfs,IWFon,dSHPFuMMjZqt7xDYGWrexXTSkdEZAiZngqymQF2ondo
+russell-2000,Russell 2000,IWM,etf,all;etfs,IWMx,XsbELVbLGBkn7xfMfyYuUipKGt1iRUc2B7pYRvFTFu3
+ishares-russell-2000-etf,iShares Russell 2000 ETF,IWM,etf,all;etfs,IWMon,dvj2kKFSyjpnyYSYppgFdAEVfgjMEoQGi9VaV23ondo
+ishares-russell-2000-value-etf,iShares Russell 2000 Value ETF,IWN,etf,all;etfs,IWNon,DX7g7WNjDpVzNK9CG81v7wb6ZbiNzYfkdzH2Xs5ondo
+nasdaq,Nasdaq,QQQ,etf,all;etfs,QQQx,Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ
+invesco-qqq,Invesco QQQ,QQQ,etf,all;stocks;etfs,QQQon,HrYNm6jTQ71LoFphjVKBTdAE4uja7WsmLG8VxB8ondo
+schwab-intl,Schwab Intl,SCHF,etf,all;etfs,SCHFx,XsWAnFM77x6YvpdaZoos79R12o4Yj4r7EVkaTWddzhU
+sp500,SP500,SPY,etf,all;etfs,SPYx,XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W
+spdr-sandp-500-etf,SPDR S&P 500 ETF,SPY,etf,all;etfs,SPYon,k18WJUULWheRkSpSquYGdNNmtuE2Vbw1hpuUi92ondo
+proshares-ultrapro-short-qqq,ProShares UltraPro Short QQQ,SQQQ,etf,all;etfs,SQQQon,D1tu7Fnm3cCpKyyPXrqm5GXShPqMj7a2SEjjq9fondo
+strategy-pp-variable,Strategy PP Variable,STRC,etf,all;etfs,STRCx,Xs78JED6PFZxWc2wCEPspZW9kL3Se5J7L5TChKgsidH
+strategy-pp-fixed,Strategy PP Fixed,STRK,etf,all;etfs,STRKx,XsaQGz41BEQkS9xAB44uvUtuXcdLJAXEU1dogEzWMZ8
+proshares-ultrapro-qqq,ProShares UltraPro QQQ,TQQQ,etf,all;etfs,TQQQon,14W1itEkV7k1W819mLSknFTaMmkCtPokbF2tRkPUondo
+tqqq,TQQQ,TQQQ,etf,all;etfs,TQQQx,XsjQP3iMAaQ3kQScQKthQpx9ALRbjKAjQtHg6TFomoc
+vanguard-total-world,Vanguard Total World,VT,etf,all;etfs,VTx,XsEdDDTcVGJU6nvdRdVnj53eKTrsCkvtrVfXGmUK68V
+vanguard-total-stock-market-etf,Vanguard Total Stock Market ETF,VTI,etf,all;etfs,VTIon,jCCU4GwukjNxAXJowG2S4KCrr5g6YyUB61WHYvGondo
+vanguard,Vanguard,VTI,etf,all;etfs,VTIx,XsssYEQjzxBCFgvYFFNuhJFBeHNdLWYeUSP8F45cDr9
+ishares-core-us-aggregate-bond-etf,iShares Core US Aggregate Bond ETF,AGG,rwa,all;rwas,AGGon,13qTjKx53y6LKGGStiKeieGbnVx3fx1bbwopKFb3ondo
+benji,BENJI,BENJI,rwa,all;rwas,BENJI,5Tu84fKBpe9vfXeotjvfvWdWbAjy3hqsExvuHgFqFxA1
+rwa-5d3zuszj,KAIO Blackrock ICS US Dollar Liquidity Fund,CASH,rwa,all;rwas,CASHx,5d3zUSzje2saHwgzwJwFE8SDR8S5sGpE9wHhXdsCfu7j
+ishares-aaa-clo-active-etf,iShares AAA CLO Active ETF,CLOA,rwa,all;rwas,CLOAon,t71FyTYHVkPAb5g48adDHmkVxXYbUuP2eq6jDZLondo
+vaneck-clo-etf,VanEck CLO ETF,CLOI,rwa,all;stocks;rwas,CLOIon,ucQ3VfWAx9pkCN4Kg84zE56FtB4FJN2kQH4ArYYondo
+ousg,Ondo Short-Term US Gov Bond Fund,OUSG,rwa,all;rwas,OUSG,i7u4r16TcsJTgq1kAG8opmVZyVnAKBwLKu6ZPMwzxNc
+tbill,OpenEden T-Bills,TBILL,rwa,all;rwas,TBILL,4MmJVdwYN8LwvbGeCowYjSx7KoEi6BJWg8XXnW4fDDp6
+tbll,TBLL,TBLL,rwa,all;rwas,TBLLx,XsqBC5tcVQLYt8wqGCHRnAUUecbRYXoJCReD6w7QEKp
+ishares-20-year-treasury-bond-etf,iShares 20+ Year Treasury Bond ETF,TLT,rwa,all;rwas,TLTon,KaSLSWByKy6b9FrCYXPEJoHmLpuFZtTCJk1F1Z9ondo
+rwa-9drppwyu,Delta Wellington Ultra Short Treasury On-Chain Fund,ULTRA,rwa,all;rwas,ULTRA,9DRPPWYud8i6CaSsDsFESs1xyVr8dBCMtjPZji2xiZEa
+wisdomtree-floating-rate-treasury-fund,WisdomTree Floating Rate Treasury Fund,USFR,rwa,all;stocks;rwas,USFRon,o6U1Sm6Vd7EofMyCrL28mrp2QLzgYGgjveHiEQ5ondo
+ustb,Superstate Short Duration US Government Securities Fund,USTB,rwa,all;rwas,USTB,CCz3SGVziFeLYk2xfEstkiqJfYkjaSWb2GCABYsVcjo2
+ustry,Etherfuse USTRY,USTRY,rwa,all;rwas,USTRY,USTRYnGgcHAhdWsanv8BG6vHGd4p7UGgoB9NRd8ei7j
+rwa-7lwanzte,Circle USYC,USYC,rwa,all;rwas,USYC,7LWanZteUKtvFjv4MHYgKXXdAuCQYFPJysL9pxxdRQGn
+vbill,VanEck Treasury Fund,VBILL,rwa,all;rwas,VBILL,34mJztT9am2jybSukvjNqRjgJBZqHJsHnivArx1P4xy1
+audd,AUDD,AUDD,stablecoin,all;currencies,AUDD,AUDDttiEpCydTm7joUMbYddm72jAWXZnCpPZtDoxqBSw
+brz,BRZ,BRZ,stablecoin,all;currencies,BRZ,FtgGSFADXBtroxq8VCausXRr2of47QBf5AS1NtZCu4GD
+buidl,BlackRock USD Institutional Digital Liquidity Fund,BUIDL,stablecoin,all;currencies,BUIDL,GyWgeqpy5GueU2YbkE8xqUeVEokCMMCEeUrfbtMw6phr
+eur,Euro,EUR,stablecoin,all;currencies,EURC,HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr
+gyen,GMO JPY,GYEN,stablecoin,all;currencies,GYEN,Crn4x1Y2HUKko7ox2EZMT6N2t2ZyH7eKtwkBGVnhEq1g
+idrx,IDRX,IDRX,stablecoin,all;currencies,IDRX,idrxTdNftk6tYedPv2M7tCFHBVCpk5rkiNRd8yUArhr
+mxne,Real MXN,MXNe,stablecoin,all;currencies,MXNe,6zYgzrT7X2wi9a9NeMtUvUWLLmf2a8vBsbYkocYdB9wa
+myrc,MYRC,MYRC,stablecoin,all;currencies,MYRC,myrcAs6bpP2g5oGHZ3qpgrfZQAFkbo9KUHdqYDXMjGv
+ngnc,NGN Coin,NGNC,stablecoin,all;currencies,NGNC,52GzcLDMfBveMRnWXKX7U3Pa5Lf7QLkWWvsJRDjWDBSk
+tryb,BiLira,TRYB,stablecoin,all;currencies,TRYB,A94X2fRy3wydNShU4dRaDyap2UuoeWJGWyATtyp61WZf
+usd,US Dollar,USD,stablecoin,all;currencies,USDC,EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+vchf,VNX Swiss Franc,VCHF,stablecoin,all;currencies,VCHF,AhhdRu5YZdjVkKR3wbnUDaymVQL2ucjMQ63sZ3LFHsch
+vgbp,VNX British Pound,VGBP,stablecoin,all;currencies,VGBP,5H4voZhzySsVvwVYDAKku8MZGuYBC7cXaBKDPW4YHWW1
+xsgd,XSGD,XSGD,stablecoin,all;currencies,XSGD,71S9cppWipeUEQDFngYwxjoxB6Sz1MUqX72byLsVYJqy
+zarp,ZARP Stablecoin,ZARP,stablecoin,all;currencies,ZARP,dngKhBQM3BGvsDHKhrLnjvRKfY5Q7gEnYGToj9Lk8rk

@@ -1,0 +1,211 @@
+id,created_at,url,text,hook_label,mentions,matched_assets,news_categories,like_count,retweet_count,reply_count
+2064022153750880588,2026-06-08T16:30:03.000Z,https://x.com/tokens/status/2064022153750880588,"INSIGHT: Leopold Aschenbrenner's Situational Awareness fund is reportedly up ~270% after fees in 2026 through May, and more than 1,000% since launch.
+
+20% of the fund is currently in Anthropic. https://t.co/QcgEDKrf5R",INSIGHT,,"Anthropic PreStocks (ANTHROPIC, equity)",,5,0,0
+2064014873630216692,2026-06-08T16:01:08.000Z,https://x.com/tokens/status/2064014873630216692,@saylor https://t.co/FOf4otoaM8,@saylor https,saylor,,,1,0,0
+2064014860917395598,2026-06-08T16:01:05.000Z,https://x.com/tokens/status/2064014860917395598,"JUST IN: @Strategy's shareholders approved paying $STRC preferred dividends semi-monthly instead of monthly.
+
+Same annual rate, twice the frequency. https://t.co/BIHUZGYgYv",JUST IN,Strategy,,earnings_guidance_financials,5,0,1
+2064009569702154469,2026-06-08T15:40:03.000Z,https://x.com/tokens/status/2064009569702154469,https://t.co/nIwvxAZpSI,https,,,,1,0,0
+2064009556993437941,2026-06-08T15:40:00.000Z,https://x.com/tokens/status/2064009556993437941,"NEW: @Netflix is bringing back Scooby-Doo. Scooby-Doo: Origins, the franchise's first live-action series, premieres in 2027.
+
+$NFLX is live and tokenized on Solana.
+https://t.co/XywrKGL80k",NEW,netflix,"Netflix (NFL, equity); Solana (SOL, crypto)","product_ip_media, crypto_solana_rwa",8,1,3
+2064004530224943160,2026-06-08T15:20:02.000Z,https://x.com/tokens/status/2064004530224943160,"LATEST: @OndoPerps is set to go live tomorrow, bringing 24/7 perpetual futures on tokenized stocks and commodities to non-US users, with tokenized stocks as collateral and up to 20x leverage. https://t.co/8KuLi2xSq2",LATEST,OndoPerps,,"earnings_guidance_financials, crypto_solana_rwa",5,0,2
+2063999762970599594,2026-06-08T15:01:05.000Z,https://x.com/tokens/status/2063999762970599594,BREAKING: FTX founder Sam Bankman-Fried has formally applied for a presidential pardon from Donald Trump. https://t.co/M8WN3VVQUe,BREAKING,,,"macro_rates_policy, crypto_solana_rwa, legal_regulatory",8,0,8
+2063995736946307211,2026-06-08T14:45:05.000Z,https://x.com/tokens/status/2063995736946307211,https://t.co/BYPT0KACKh,https,,,,0,0,0
+2063995724581495239,2026-06-08T14:45:02.000Z,https://x.com/tokens/status/2063995724581495239,"JUST IN: @Amazon signed a multibillion-dollar deal with Corning to supply optical fiber and connectivity for expanding AWS data centers in the US, adding about 1,000 advanced-manufacturing jobs.
+
+$AMZN is live on Solana. https://t.co/l7FejETr9w",JUST IN,amazon,"Solana (SOL, crypto); Amazon (AMZN, equity)","ai_compute_datacenters, deals_partnerships_contracts, macro_rates_policy, crypto_solana_rwa",14,2,2
+2063991972474560862,2026-06-08T14:30:08.000Z,https://x.com/tokens/status/2063991972474560862,https://t.co/LKvyDY4mXT,https,,,,1,0,0
+2063991960231354377,2026-06-08T14:30:05.000Z,https://x.com/tokens/status/2063991960231354377,"JUST IN: @BitMNR added 126,971 ETH last week, lifting its treasury to 5,543,872 ETH, about 4.59% of all Ethereum. https://t.co/fhdKYxMo97",JUST IN,BitMNR,"Ethereum (ETH, crypto)",macro_rates_policy,9,1,2
+2063988175593500864,2026-06-08T14:15:02.000Z,https://x.com/tokens/status/2063988175593500864,"NEW: A coalition of more than 200 crypto companies and groups, including @Coinbase, @Ripple and @Circle, has urged Senate leaders to bring the CLARITY Act to a floor vote ""without delay. https://t.co/3n5GODIn15",NEW,"coinbase, Ripple, circle","Coinbase (COIN, equity); Circle (CRCL, equity)","product_ip_media, crypto_solana_rwa",20,4,1
+2063984652424196234,2026-06-08T14:01:02.000Z,https://x.com/tokens/status/2063984652424196234,"Market open: The relief rally accelerates, led by a comeback in the beaten-down chip trade. Intel and Micron jump as semiconductors reverse last week's brutal selloff. https://t.co/JrLFHzHNQu",Market open,,"Micron (MU, equity); Intel (INTC, equity); USD.AI (CHIP, crypto); OPEN (OPEN, equity)","ai_compute_datacenters, macro_rates_policy",4,0,0
+2063979365416026413,2026-06-08T13:40:02.000Z,https://x.com/tokens/status/2063979365416026413,"BREAKING: $INTC jumps double digits on a report that Google placed an order for Intel to build 3M+ of its AI chips, with Nvidia also testing Intel's tech, as TSMC struggles to keep up with demand. https://t.co/v8MhIjrQcd",BREAKING,,"NVIDIA (NVDA, equity); Alphabet (GOOGL, equity); Intel (INTC, equity); TSMC (TSM, equity)",ai_compute_datacenters,5,0,1
+2063974343223427091,2026-06-08T13:20:04.000Z,https://x.com/tokens/status/2063974343223427091,https://t.co/ZJTwJ1JO0t,https,,,,0,0,0
+2063974330716012792,2026-06-08T13:20:01.000Z,https://x.com/tokens/status/2063974330716012792,"NEW: @Nvidia and @SKhynix have struck a multiyear deal to co-develop memory for Nvidia's next-gen platforms, tying the world's top AI-memory maker directly into Nvidia's roadmap.
+
+$NVDA is live and tokenized on Solana. https://t.co/GEmERRG7Ye",NEW,"nvidia, SKhynix","Solana (SOL, crypto); NVIDIA (NVDA, equity)","ai_compute_datacenters, deals_partnerships_contracts, crypto_solana_rwa",9,0,5
+2063969432649834577,2026-06-08T13:00:34.000Z,https://x.com/tokens/status/2063969432649834577,"BREAKING: @Strategy is back to buying. It acquired 1,550 BTC for ~$101 million, raising holdings to 845,256 BTC. https://t.co/GLCc12q6Q7",BREAKING,Strategy,"Bitcoin (BTC, crypto)","ai_compute_datacenters, deals_partnerships_contracts",14,1,0
+2063964277338452472,2026-06-08T12:40:04.000Z,https://x.com/tokens/status/2063964277338452472,https://t.co/DEbi1jTKgz,https,,,,2,0,0
+2063964264818454771,2026-06-08T12:40:01.000Z,https://x.com/tokens/status/2063964264818454771,"INSIGHT: Gold now makes up roughly 24% of central-bank reserves outside the US, the highest since the 1990s.
+
+Gold $GLD is live and tokenized on Solana. https://t.co/xKYsHv8IAs",INSIGHT,,"Solana (SOL, crypto); Gold (GLD, commodity); ServiceNow (NOW, equity)","crypto_solana_rwa, commodities_energy",9,0,3
+2063959245712970216,2026-06-08T12:20:05.000Z,https://x.com/tokens/status/2063959245712970216,https://t.co/OA5RSPvJjk,https,,,,2,0,0
+2063959233155190932,2026-06-08T12:20:02.000Z,https://x.com/tokens/status/2063959233155190932,"JUST IN: @AMD is committing up to £2 billion (~$2.7B) over five years to UK AI infrastructure, backing university partnerships and major AI supercomputers.
+
+$AMD is live and tokenized on Solana. https://t.co/DwtCaVhjhH",JUST IN,AMD,"Solana (SOL, crypto); AMD (AMD, equity)","ai_compute_datacenters, deals_partnerships_contracts, crypto_solana_rwa",7,0,2
+2063955368615846234,2026-06-08T12:04:40.000Z,https://x.com/tokens/status/2063955368615846234,"Pre-market: A relief rally takes hold, chips rebound, crypto bounces and gold eases, as ceasefire hopes calm a week of selling.
+
+Follow @tokens for real-time market coverage. https://t.co/5MYGk4Eyc2",Pre-market,tokens,"Gold (GLD, commodity)","ai_compute_datacenters, crypto_solana_rwa, commodities_energy",7,2,2
+2063949177055518913,2026-06-08T11:40:04.000Z,https://x.com/tokens/status/2063949177055518913,https://t.co/rx00xxfHEA,https,,,,3,0,0
+2063949164732719238,2026-06-08T11:40:01.000Z,https://x.com/tokens/status/2063949164732719238,"BREAKING: Silver has fallen below its 200-day moving average for the first time since April 2025, a key long-term support level.
+
+Silver $XAG is tokenized and live on Solana. https://t.co/rluQKSul8q",BREAKING,,"Solana (SOL, crypto); Silver (XAG, commodity)","crypto_solana_rwa, commodities_energy",8,0,1
+2063944269086495193,2026-06-08T11:20:34.000Z,https://x.com/tokens/status/2063944269086495193,@nvidia https://t.co/ZJTwJ1JO0t,@nvidia https,nvidia,"NVIDIA (NVDA, equity)",ai_compute_datacenters,1,0,0
+2063944255677321575,2026-06-08T11:20:31.000Z,https://x.com/tokens/status/2063944255677321575,"JUST IN: Nvidia and Hyundai are expanding their partnership to bring ""physical AI"" to the factory floor, training Boston Dynamics' Atlas humanoid robots on Nvidia's platform for industrial deployment.
+
+$NVDA is live on Solana. https://t.co/iCpAQlhiDN",JUST IN,,"Solana (SOL, crypto); NVIDIA (NVDA, equity)","ai_compute_datacenters, deals_partnerships_contracts, crypto_solana_rwa",17,3,2
+2063939164400468417,2026-06-08T11:00:17.000Z,https://x.com/tokens/status/2063939164400468417,"BREAKING: President Trump says Israel and Iran are ""looking to do an immediate ceasefire"" as the two trade fresh strikes. https://t.co/12q2QAKev2",BREAKING,,,macro_rates_policy,8,2,1
+2063923282135720067,2026-06-08T09:57:10.000Z,https://x.com/tokens/status/2063923282135720067,"BREAKING: Asian markets sell off sharply as the global chip rout deepens.
+
+KOSPI -5.1% (plunged as much as 9% intraday)
+
+Nikkei -4.0%
+
+Taiwan -3.7%
+
+Shenzhen -2.5%
+
+Hang Seng -1.2% https://t.co/vBWQ6nY3ad",BREAKING,,"USD.AI (CHIP, crypto)",ai_compute_datacenters,2,0,1
+2063785473584320753,2026-06-08T00:49:34.000Z,https://x.com/tokens/status/2063785473584320753,BREAKING: South Korea's KOSPI Index triggered a trading halt after plunging over 8%.,BREAKING,,,,13,0,1
+2063777033751298241,2026-06-08T00:16:02.000Z,https://x.com/tokens/status/2063777033751298241,INCOMING: $AAPL is expected to unveil a major AI upgrade for Siri at WWDC this week.,INCOMING,,,ai_compute_datacenters,14,2,3
+2063710992136339516,2026-06-07T19:53:37.000Z,https://x.com/tokens/status/2063710992136339516,https://t.co/UuQIWw7hlb,https,,,,3,0,0
+2063710979645739166,2026-06-07T19:53:34.000Z,https://x.com/tokens/status/2063710979645739166,"Big updates from $MSFT's Xbox division today:
+
+- Xbox Series X25 Limited Edition announced
+- Halo: Campaign Evolved launches July 28 https://t.co/bt6wkZHH2p",Big updates from $MSFT's Xbox division today,,,"ai_compute_datacenters, product_ip_media",19,1,2
+2063667435916734866,2026-06-07T17:00:32.000Z,https://x.com/tokens/status/2063667435916734866,https://t.co/PJPS3a1rFI,https,,,,4,0,0
+2063667423686107214,2026-06-07T17:00:29.000Z,https://x.com/tokens/status/2063667423686107214,"JUST IN: $MCD is upgrading its AI drive-thru strategy with ArchIQ, a new Google-powered operating system currently being tested at multiple U.S. locations. https://t.co/F3CekVrBiz",JUST IN,,"Alphabet (GOOGL, equity)",ai_compute_datacenters,19,2,6
+2063659753906360600,2026-06-07T16:30:00.000Z,https://x.com/tokens/status/2063659753906360600,"The week ahead. All eyes on inflation.
+
+Tue: May Existing Home Sales
+
+Wed: May CPI
+
+Thu: May PPI + OPEC Monthly Report
+
+Fri: UMich Inflation Expectations + Consumer Sentiment
+
+CPI is the headline: April ran hot at 3.8%, so markets are watching for signs of reacceleration.",The,,,"product_ip_media, earnings_guidance_financials, macro_rates_policy",13,2,3
+2063644663362544106,2026-06-07T15:30:03.000Z,https://x.com/tokens/status/2063644663362544106,"INSIGHT: Solana ETFs drew ~$106M in net inflows in May, led by BSOL at ~$71M, a sign of steady institutional demand despite the broader crypto selloff. https://t.co/FiP8tBMTWL",INSIGHT,,"Solana (SOL, crypto)","product_ip_media, crypto_solana_rwa",53,10,7
+2063629557887074482,2026-06-07T14:30:01.000Z,https://x.com/tokens/status/2063629557887074482,"INSIGHT: US tech companies announced 38,242 job cuts in May, the most since August 2024, with AI cited as the top reason.",INSIGHT,,,ai_compute_datacenters,9,2,1
+2063614811821523080,2026-06-07T13:31:25.000Z,https://x.com/tokens/status/2063614811821523080,"JUST IN: @OpenAI plans to transform ChatGPT into a “superapp” bundling coding tools, AI agents and outside services ahead of its IPO. https://t.co/oZjGqbSef3",JUST IN,OpenAI,"Microsoft (MSFT, equity); OpenAI PreStocks (OPENAI, equity)","ai_compute_datacenters, earnings_guidance_financials",88,15,14
+2063599366309593170,2026-06-07T12:30:03.000Z,https://x.com/tokens/status/2063599366309593170,"HUGE: May was the biggest month for RWA adoption all year.
+
+RWAs added ~83,000 holders, the largest monthly gain of 2026, pushing the total to 826,000. https://t.co/ud6ph0f21e",HUGE,,,ai_compute_datacenters,34,5,8
+2063349937782571258,2026-06-06T19:58:55.000Z,https://x.com/tokens/status/2063349937782571258,"The Race to $1T Net Worth, Visualized
+
+https://t.co/jXg0YpZ6bp",The,,,,19,2,3
+2063335133768523987,2026-06-06T19:00:05.000Z,https://x.com/tokens/status/2063335133768523987,"Prediction market traders are now pricing in an 81% chance of no Fed rate cuts this year, a new all-time high. https://t.co/JoIKl169mG","Prediction market traders are now pricing in an 81% chance of no Fed rate cuts this year, a new all-time high. https",,"ServiceNow (NOW, equity)",macro_rates_policy,11,1,1
+2063320979959620041,2026-06-06T18:03:50.000Z,https://x.com/tokens/status/2063320979959620041,@Blockworks @solana Great data points here,@Blockworks,"Blockworks, solana","Solana (SOL, crypto)",crypto_solana_rwa,7,0,0
+2063319614902419736,2026-06-06T17:58:25.000Z,https://x.com/tokens/status/2063319614902419736,"Top tokens traded on Solana based on 24h volume:
+
+- Bitcoin $cbBTC
+- Hyperliquid $HYPE
+- Ethereum $wETH
+- Zcash $ZEC
+
+Check the new trending section on https://t.co/6feTL4PS3v for more info. https://t.co/IL9sKzagZ0",Top tokens traded on Solana based on 24h volume,,"Hyperliquid (HYPE, crypto); Ethereum (ETH, crypto); Bitcoin (BTC, crypto); Solana (SOL, crypto); Zcash (ZEC, crypto)","crypto_solana_rwa, legal_regulatory",40,4,6
+2063304934553247887,2026-06-06T17:00:05.000Z,https://x.com/tokens/status/2063304934553247887,"NEW: @NASA’s Lockheed Martin built X-59 just flew supersonic for the first time, reaching ~Mach 1.1.
+
+It aims to turn the sonic boom into a quieter “thump,” helping pave the way to end the 1973 U.S. ban on overland supersonic flight.
+https://t.co/HPuGLmkZhQ",NEW,NASA,"Lockheed (LMT, equity)",ai_compute_datacenters,4,1,1
+2063289853132038326,2026-06-06T16:00:09.000Z,https://x.com/tokens/status/2063289853132038326,"JUST IN: @Tesla’s FSD navigates a narrow, wet cliffside road in China, hands-free.
+
+The system remains driver-supervised in China and is still awaiting full regulatory approval.
+https://t.co/YQGp7kenSV",JUST IN,Tesla,"Tesla (TSLA, equity)","ai_compute_datacenters, macro_rates_policy, legal_regulatory",18,2,5
+2063274777180250497,2026-06-06T15:00:15.000Z,https://x.com/tokens/status/2063274777180250497,https://t.co/OaUePCYrQN,https,,,,4,0,0
+2063274764551274743,2026-06-06T15:00:12.000Z,https://x.com/tokens/status/2063274764551274743,"JUST IN: @SpaceX IPO draws $150B demand for a $75B raise, 2x oversubscribed ahead of next week’s pricing.
+
+Gain pre-IPO exposure to $SPACEX on Solana. https://t.co/noO13VEWMa",JUST IN,SpaceX,"Solana (SOL, crypto); SpaceX (SPACEX, equity)","ai_compute_datacenters, earnings_guidance_financials, crypto_solana_rwa",32,2,8
+2063259671893529054,2026-06-06T14:00:13.000Z,https://x.com/tokens/status/2063259671893529054,"NEW: Trump says he’ll meet AI leaders next week to discuss the US government taking equity stakes in their companies, citing the Intel deal as a model.
+https://t.co/VZkKcSa7cN",NEW,,"Intel (INTC, equity)","ai_compute_datacenters, deals_partnerships_contracts, macro_rates_policy",13,2,1
+2063244643207459060,2026-06-06T13:00:30.000Z,https://x.com/tokens/status/2063244643207459060,https://t.co/OaUePCYrQN,https,,,,2,0,1
+2063244630305689604,2026-06-06T13:00:27.000Z,https://x.com/tokens/status/2063244630305689604,"NEW: @krakenfx is opening access to the SpaceX IPO through @xStocksFi, letting users in 110+ countries get an allocation at the offering price. https://t.co/wQXZ322WG5",NEW,"krakenfx, xStocksFi","SpaceX (SPACEX, equity)","earnings_guidance_financials, crypto_solana_rwa",18,0,4
+2063229468282683416,2026-06-06T12:00:12.000Z,https://x.com/tokens/status/2063229468282683416,"ICYMI: @Securitize, the largest tokenization firm and the issuer behind BlackRock’s onchain fund, is going public on the NYSE under the ticker $SECZ. https://t.co/EDndEZnRmL",ICYMI,Securitize,"BlackRock (BLK, equity)","ai_compute_datacenters, crypto_solana_rwa, legal_regulatory",41,7,2
+2063214346659066300,2026-06-06T11:00:07.000Z,https://x.com/tokens/status/2063214346659066300,"NEW: Tokenized equities have crossed $2 billion in cumulative volume on @Raydium.
+
+It took nine months to reach the first billion and just two for the second.
+https://t.co/BYdmnAZ71G",NEW,Raydium,,"crypto_solana_rwa, legal_regulatory",25,3,3
+2063060846071402958,2026-06-06T00:50:10.000Z,https://x.com/tokens/status/2063060846071402958,ICYMI: The Trump Administration is reportedly meeting with AI executives next week to discuss federal government ownership stakes in leading AI companies.,ICYMI,,,"ai_compute_datacenters, macro_rates_policy",9,1,1
+2063043170141896799,2026-06-05T23:39:55.000Z,https://x.com/tokens/status/2063043170141896799,"@mattinfra @solana @MessariCrypto @AvgJoesCrypto @Collector_Crypt @phygitals @Slabzapp gaming, collecting, trading -&gt; onchain commerce on Solana",@mattinfra,"mattinfra, solana, MessariCrypto, AvgJoesCrypto, Collector_Crypt, phygitals, Slabzapp","Solana (SOL, crypto)","ai_compute_datacenters, product_ip_media, crypto_solana_rwa",1,0,0
+2063042914385830122,2026-06-05T23:38:54.000Z,https://x.com/tokens/status/2063042914385830122,@solana objectively solid data here,@solana,solana,"Solana (SOL, crypto)",crypto_solana_rwa,3,1,0
+2062989137687511254,2026-06-05T20:05:13.000Z,https://x.com/tokens/status/2062989137687511254,"BREAKING: Over $1.75 trillion wiped from US equity markets today.
+
+S&amp;P 500: -2.64%
+Nasdaq: -4.18%
+Dow Jones: -1.35%",BREAKING,,"Nasdaq (QQQ, etf)",,15,1,1
+2062985206827831747,2026-06-05T19:49:36.000Z,https://x.com/tokens/status/2062985206827831747,BREAKING: $SPACEX disclosed a multi-year cloud service agreement with $GOOGL worth $920M per month. https://t.co/OxA5W5c1Fp,BREAKING,,,ai_compute_datacenters,22,3,1
+2062982993648697841,2026-06-05T19:40:48.000Z,https://x.com/tokens/status/2062982993648697841,@tokenterminal Great work!,@tokenterminal,tokenterminal,,,3,0,0
+2062981547167481988,2026-06-05T19:35:03.000Z,https://x.com/tokens/status/2062981547167481988,"Tokenized asset holders on @solana update:
+
+- Stablecoins: 10.6M (new record high)
+- Funds: 55k
+- Commodities: 29k (new record high)
+- Stocks: 200.2k (new record high) https://t.co/rJW4fpkCRh",Tokenized asset holders on @solana update,solana,"Solana (SOL, crypto)","earnings_guidance_financials, crypto_solana_rwa",64,7,8
+2062972769676226781,2026-06-05T19:00:11.000Z,https://x.com/tokens/status/2062972769676226781,https://t.co/0cdknQGGxv,https,,,,2,0,0
+2062972756816486573,2026-06-05T19:00:08.000Z,https://x.com/tokens/status/2062972756816486573,"NEW: ChatGPT can now send emails directly from writing blocks on the web. Draft, edit, and send without ever the conversation.
+
+https://t.co/hSxb2P3Nwd",NEW,,"ServiceNow (NOW, equity)",ai_compute_datacenters,11,1,4
+2062966438131101749,2026-06-05T18:35:01.000Z,https://x.com/tokens/status/2062966438131101749,"Crypto Fear and Greed Index reenters ""Extreme Fear"" territory. https://t.co/JFv9ejvpQd","Crypto Fear and Greed Index reenters ""Extreme Fear"" territory. https",,,crypto_solana_rwa,11,1,3
+2062958889151471789,2026-06-05T18:05:01.000Z,https://x.com/tokens/status/2062958889151471789,"$HYPE has exceeded $200M in 24hr volume on @solana, significantly higher than volume on major centralized exchanges. https://t.co/QaXxt9BHtf","$HYPE has exceeded $200M in 24hr volume on @solana, significantly higher than volume on major centralized exchanges. https",solana,"Solana (SOL, crypto)",crypto_solana_rwa,91,14,7
+2062952656856133859,2026-06-05T17:40:15.000Z,https://x.com/tokens/status/2062952656856133859,https://t.co/eRMWjabCi9,https,,,,2,0,0
+2062952644860399951,2026-06-05T17:40:12.000Z,https://x.com/tokens/status/2062952644860399951,NEW: $GOOGL Gemini Live adds real-time image generation and editing. https://t.co/nJ29YePKuU,NEW,,,,15,1,4
+2062945049093324805,2026-06-05T17:10:02.000Z,https://x.com/tokens/status/2062945049093324805,INSIGHT: Private data center construction spending has officially surpassed public spending on transportation infrastructure. https://t.co/Y1OLHcBAqb,INSIGHT,,,ai_compute_datacenters,10,2,0
+2062939173691212139,2026-06-05T16:46:41.000Z,https://x.com/tokens/status/2062939173691212139,"Ryan Cohen's latest comments on his mission to acquire $EBAY: “I want to own eBay...I want to own it for the long term. It’s a great business that’s been poorly managed.”
+
+$GME https://t.co/zoRhKEf5fP",Ryan Cohen's latest comments on his mission to acquire $EBAY,,"eBay (EBAY, equity)",deals_partnerships_contracts,11,1,1
+2062933040620613783,2026-06-05T16:22:18.000Z,https://x.com/tokens/status/2062933040620613783,"Markets take a beating following strong jobs report:
+
+S&amp;P 500: -1.6%
+Nasdaq: -2.7%
+Dow Jones: -0.7%",Markets take a beating following strong jobs report,,"Nasdaq (QQQ, etf)",macro_rates_policy,6,1,2
+2062927534350884931,2026-06-05T16:00:26.000Z,https://x.com/tokens/status/2062927534350884931,"BREAKING: @Strategy’s unrealized loss on its $BTC holdings has hit a record, around -$12.7 billion, the worst in its six-year history. https://t.co/sH223tl1o4",BREAKING,Strategy,,,7,0,1
+2062919902378467578,2026-06-05T15:30:06.000Z,https://x.com/tokens/status/2062919902378467578,"NEW: President Trump says stocks “should go up, not down” after a strong jobs report, posting on Truth Social as markets fall on the semiconductor selloff. https://t.co/8qoo94iwdD",NEW,,,"ai_compute_datacenters, earnings_guidance_financials, macro_rates_policy",5,0,1
+2062912462614409437,2026-06-05T15:00:32.000Z,https://x.com/tokens/status/2062912462614409437,https://t.co/wg4mfPbAMW,https,,,,2,0,0
+2062912450190840281,2026-06-05T15:00:29.000Z,https://x.com/tokens/status/2062912450190840281,"BREAKING: @AnthropicAI is urging a globally coordinated slowdown of frontier AI, warning models are approaching the ability to improve themselves without human intervention. https://t.co/Lo2OxSSuu0",BREAKING,AnthropicAI,,ai_compute_datacenters,12,1,1
+2062907303201010017,2026-06-05T14:40:02.000Z,https://x.com/tokens/status/2062907303201010017,"BREAKING: $BTC breaks down below $61,000. https://t.co/PYsDcpDyVL",BREAKING,,,,8,0,1
+2062902659674415285,2026-06-05T14:21:35.000Z,https://x.com/tokens/status/2062902659674415285,"Market open: A stronger-than-expected jobs report cools rate-cut bets as the semiconductor selloff broadens into a second day, dragging chips and big tech lower while staples and value climb. https://t.co/WiPGWUjzwR",Market open,,"OPEN (OPEN, equity)","ai_compute_datacenters, macro_rates_policy, legal_regulatory",5,0,0
+2062897331423617060,2026-06-05T14:00:25.000Z,https://x.com/tokens/status/2062897331423617060,"JUST IN: The US Treasury completed a $12.5 billion debt buyback, among its largest, repurchasing older Treasury securities to support market liquidity.",JUST IN,,,"earnings_guidance_financials, macro_rates_policy, legal_regulatory",10,3,0
+2062892014946095158,2026-06-05T13:39:17.000Z,https://x.com/tokens/status/2062892014946095158,"BREAKING: The US economy added 172,000 jobs in May, roughly double the 85,000 expected, a sign the labor market is running hotter than forecast.",BREAKING,,,macro_rates_policy,6,1,0
+2062887173813354855,2026-06-05T13:20:03.000Z,https://x.com/tokens/status/2062887173813354855,"BREAKING: America's largest banks, JPMorgan, Citi, BofA and Wells Fargo, are building a joint tokenized deposit network to rival stablecoins.
+
+The pitch: regulated bank deposits on blockchain rails, enabling instant, 24/7 settlement. Target launch: 2027. https://t.co/pNBD7JPJfL",BREAKING,,"Wells Fargo (WFC, equity); Target (TGT, equity)","ai_compute_datacenters, crypto_solana_rwa",18,2,3
+2062882402226274467,2026-06-05T13:01:05.000Z,https://x.com/tokens/status/2062882402226274467,"LATEST: @SPGlobal 500 won't bend its rules for the mega-IPO wave.
+
+S&amp;P DJI declined to ease its profitability, seasoning and float requirements for megacaps, so even a $1.75T @SpaceX gets no fast-track into the index. https://t.co/3I2vqZJuIL",LATEST,"SPGlobal, SpaceX","SpaceX (SPACEX, equity); MegaETH (MEGA, crypto)",earnings_guidance_financials,6,0,0
+2062877101913780331,2026-06-05T12:40:02.000Z,https://x.com/tokens/status/2062877101913780331,NEW: Tokenized versions of US stocks via @xStocksFi are now tradable on @OKX DEX through the OKX @wallet on Solana. https://t.co/ox7NasB0bZ,NEW,"xStocksFi, okx, wallet","Solana (SOL, crypto); ServiceNow (NOW, equity)","earnings_guidance_financials, crypto_solana_rwa",17,3,1
+2062872068782432420,2026-06-05T12:20:02.000Z,https://x.com/tokens/status/2062872068782432420,"BREAKING: The US chip rout has spread into Asia. Markets across the region sold off as Broadcom's weak outlook hit AI and semiconductor stocks.
+
+South Korea's KOSPI: down 6.9% ($345 BILLION)
+Japan's Nikkei: down 4% ($198 BILLION)
+Taiwan's Taiex: down 2.4% ($206 BILLION) https://t.co/aLZ2BfrQBF",BREAKING,,"Broadcom (AVGO, equity); USD.AI (CHIP, crypto)","ai_compute_datacenters, earnings_guidance_financials",13,5,0
+2062869238629781905,2026-06-05T12:08:47.000Z,https://x.com/tokens/status/2062869238629781905,"Pre-market: Tech stays under pressure as the Broadcom-led chip rout extends, with money rotating toward the Dow and traders bracing for the May jobs report. Crypto remains weak.
+
+Follow @tokens for real-time market coverage. https://t.co/kuFhXiyam3",Pre-market,tokens,"Broadcom (AVGO, equity); USD.AI (CHIP, crypto)","ai_compute_datacenters, macro_rates_policy, crypto_solana_rwa",4,0,0
+2062862003321135264,2026-06-05T11:40:02.000Z,https://x.com/tokens/status/2062862003321135264,"NEW: @Phantom has added a @SpaceX pre-IPO perpetuals market, letting users trade exposure to SpaceX's valuation ahead of its expected debut. https://t.co/UaJtMUug2Q",NEW,"Phantom, SpaceX","SpaceX (SPACEX, equity)",earnings_guidance_financials,17,2,2
+2062856989001273853,2026-06-05T11:20:06.000Z,https://x.com/tokens/status/2062856989001273853,https://t.co/LwDCb3cgdF,https,,,,4,0,0
+2062856976347078883,2026-06-05T11:20:03.000Z,https://x.com/tokens/status/2062856976347078883,"JUST IN: @SpaceX has launched and deployed 29 @Starlink satellites from Cape Canaveral, with the Falcon 9 booster landing for the 12th time.
+
+Gain pre-IPO exposure to $SPACEX on Solana. https://t.co/83WBjUbvHM",JUST IN,"SpaceX, Starlink","Solana (SOL, crypto); SpaceX (SPACEX, equity)","ai_compute_datacenters, earnings_guidance_financials, crypto_solana_rwa",9,1,2
+2062851936068530440,2026-06-05T11:00:02.000Z,https://x.com/tokens/status/2062851936068530440,"BREAKING: $ZEC plunges ~40% after a critical Zcash bug disclosure which could’ve enabled undetectable counterfeit coins since 2022.
+
+A researcher found it with Anthropic’s Claude (Opus 4.8). There’s no cryptographic way to confirm whether it was exploited. https://t.co/5am2Mg6S5L",BREAKING,,"Anthropic PreStocks (ANTHROPIC, equity); Zcash (ZEC, crypto)",crypto_solana_rwa,34,3,6
+2062663923908968895,2026-06-04T22:32:56.000Z,https://x.com/tokens/status/2062663923908968895,"INSIGHT: AI agents and bots have officially surpassed human web traffic for the first time in history, per Cloudflare Radar data. https://t.co/vDVMqbqRMx",INSIGHT,,,ai_compute_datacenters,9,1,1
+2062626700131959046,2026-06-04T20:05:01.000Z,https://x.com/tokens/status/2062626700131959046,"JUST IN: Goldman Sachs forecasts SpaceX could generate $474B in annual revenue by 2030, as they prepare for the historic IPO.
+
+https://t.co/OaUePCYrQN https://t.co/1PmCYT6NUS",JUST IN,,"Goldman Sachs (GS, equity); SpaceX (SPACEX, equity)","earnings_guidance_financials, commodities_energy",7,0,1
+2062618646770548776,2026-06-04T19:33:01.000Z,https://x.com/tokens/status/2062618646770548776,"INSIGHT: AI is set to roughly triple data center electricity demand by 2035 to ~1,200 TWh, per the IEA. https://t.co/ZrlEP1selq",INSIGHT,,,ai_compute_datacenters,7,0,2
+2062610375766667266,2026-06-04T19:00:09.000Z,https://x.com/tokens/status/2062610375766667266,"INSIGHT: @Raydium surpasses $2B in cumulative tokenized equities volume as demand for onchain equity markets continues to grow on Solana.
+
+https://t.co/BYdmnAZ71G",INSIGHT,Raydium,"Solana (SOL, crypto)","ai_compute_datacenters, crypto_solana_rwa",14,2,2
+2062604057580335258,2026-06-04T18:35:03.000Z,https://x.com/tokens/status/2062604057580335258,https://t.co/ZJTwJ1JO0t,https,,,,3,0,1
+2062604045592993925,2026-06-04T18:35:00.000Z,https://x.com/tokens/status/2062604045592993925,"NEW: $NVDA unveils Nemotron 3 Ultra, an open AI model designed for long-running agents, claiming up to 5x faster inference and 30% lower costs for agentic workloads.
+
+https://t.co/JYUY8Ngt6e",NEW,,"Delta Wellington Ultra Short Treasury On-Chain Fund (ULTRA, rwa); OPEN (OPEN, equity)","ai_compute_datacenters, deals_partnerships_contracts",8,1,2
+2062595299739381816,2026-06-04T18:00:15.000Z,https://x.com/tokens/status/2062595299739381816,https://t.co/2iC3t5OaHS,https,,,,0,0,0
+2062595287433335154,2026-06-04T18:00:12.000Z,https://x.com/tokens/status/2062595287433335154,JUST IN: @Coinbase confirms the first Fannie Mae-insured mortgage backed by $BTC has been funded in the U.S. The program is expected to roll out nationwide this summer. https://t.co/uSI1wkY8lj,JUST IN,coinbase,"Coinbase (COIN, equity)",product_ip_media,7,0,2
+2062587690974105977,2026-06-04T17:30:01.000Z,https://x.com/tokens/status/2062587690974105977,"NEW: @OpenAI is rolling out ""Dreaming"" for ChatGPT, allowing the AI to organize, connect, and prioritize memories over time to deliver more personalized responses.
+
+https://t.co/gTp0km6feY",NEW,OpenAI,"Microsoft (MSFT, equity); OpenAI PreStocks (OPENAI, equity)",ai_compute_datacenters,7,1,0
+2062580213528334458,2026-06-04T17:00:18.000Z,https://x.com/tokens/status/2062580213528334458,"HUGE: Solana's x402-powered AI agent economy has crossed $50M in volume, with active agent senders up 645% to about 192,000, weeks after the https://t.co/jEFrr436DF launch with Google Cloud. https://t.co/iODSTxhtcW",HUGE,,"Solana (SOL, crypto); Alphabet (GOOGL, equity)","ai_compute_datacenters, crypto_solana_rwa",14,4,3
+2062575106510168263,2026-06-04T16:40:00.000Z,https://x.com/tokens/status/2062575106510168263,"LATEST: @SpaceX's full IPO roadshow presentation is out, a 17-minute pitch from CFO Bret Johnsen ahead of the expected June 12 debut.
+
+https://t.co/9Mswkrg1H3",LATEST,SpaceX,"SpaceX (SPACEX, equity)",earnings_guidance_financials,7,0,1
+2062570078147948956,2026-06-04T16:20:01.000Z,https://x.com/tokens/status/2062570078147948956,"JUST IN: @JupiterExchange has added Forecast to @jup_predict, a Solana-native, Prop AMM liquidity model where market makers compete to quote prediction markets, routing users to the best price. https://t.co/zOBidjmnmZ",JUST IN,"JupiterExchange, jup_predict","Solana (SOL, crypto)",crypto_solana_rwa,39,4,2
+2062565322264367197,2026-06-04T16:01:08.000Z,https://x.com/tokens/status/2062565322264367197,"NEW: Bybit is now the first major exchange to support Western Union's Solana-based USDPT stablecoin, adding to its fiat on/off-ramps across Latin America. https://t.co/bnce7hpGWu",NEW,,"Solana (SOL, crypto); ServiceNow (NOW, equity)",crypto_solana_rwa,23,4,3
+2062560331181035551,2026-06-04T15:41:18.000Z,https://x.com/tokens/status/2062560331181035551,@SpaceX https://t.co/vwhKey3u5J,@SpaceX https,SpaceX,"SpaceX (SPACEX, equity)",,1,0,0
+2062560319306862996,2026-06-04T15:41:15.000Z,https://x.com/tokens/status/2062560319306862996,"JUST IN: @SoFi Active Investing users can now submit interest to buy SpaceX shares at the IPO price ahead of the expected June 12 debut.
+
+$SOFI is live on Solana. https://t.co/B1DG8zYgXH",JUST IN,SoFi,"Solana (SOL, crypto); SpaceX (SPACEX, equity); SoFi Technologies (SOFI, equity); ServiceNow (NOW, equity)","earnings_guidance_financials, crypto_solana_rwa",14,1,4

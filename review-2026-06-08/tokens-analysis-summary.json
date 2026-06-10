@@ -1,0 +1,790 @@
+{
+  "tweet_count": 100,
+  "date_range": [
+    "2026-06-04T15:41:15.000Z",
+    "2026-06-08T16:30:03.000Z"
+  ],
+  "hook_labels": [
+    [
+      "https",
+      17
+    ],
+    [
+      "BREAKING",
+      16
+    ],
+    [
+      "JUST IN",
+      15
+    ],
+    [
+      "NEW",
+      15
+    ],
+    [
+      "INSIGHT",
+      8
+    ],
+    [
+      "LATEST",
+      3
+    ],
+    [
+      "Market open",
+      2
+    ],
+    [
+      "Pre-market",
+      2
+    ],
+    [
+      "The",
+      2
+    ],
+    [
+      "HUGE",
+      2
+    ],
+    [
+      "ICYMI",
+      2
+    ],
+    [
+      "@saylor https",
+      1
+    ],
+    [
+      "@nvidia https",
+      1
+    ],
+    [
+      "INCOMING",
+      1
+    ],
+    [
+      "Big updates from $MSFT's Xbox division today",
+      1
+    ],
+    [
+      "Prediction market traders are now pricing in an 81% chance of no Fed rate cuts this year, a new all-time high. https",
+      1
+    ],
+    [
+      "@Blockworks",
+      1
+    ],
+    [
+      "Top tokens traded on Solana based on 24h volume",
+      1
+    ],
+    [
+      "@mattinfra",
+      1
+    ],
+    [
+      "@solana",
+      1
+    ]
+  ],
+  "mentioned_accounts": [
+    [
+      "SpaceX",
+      6
+    ],
+    [
+      "solana",
+      5
+    ],
+    [
+      "Strategy",
+      3
+    ],
+    [
+      "coinbase",
+      2
+    ],
+    [
+      "nvidia",
+      2
+    ],
+    [
+      "tokens",
+      2
+    ],
+    [
+      "OpenAI",
+      2
+    ],
+    [
+      "xStocksFi",
+      2
+    ],
+    [
+      "Raydium",
+      2
+    ],
+    [
+      "saylor",
+      1
+    ],
+    [
+      "netflix",
+      1
+    ],
+    [
+      "OndoPerps",
+      1
+    ],
+    [
+      "amazon",
+      1
+    ],
+    [
+      "BitMNR",
+      1
+    ],
+    [
+      "Ripple",
+      1
+    ],
+    [
+      "circle",
+      1
+    ],
+    [
+      "SKhynix",
+      1
+    ],
+    [
+      "AMD",
+      1
+    ],
+    [
+      "Blockworks",
+      1
+    ],
+    [
+      "NASA",
+      1
+    ],
+    [
+      "Tesla",
+      1
+    ],
+    [
+      "krakenfx",
+      1
+    ],
+    [
+      "Securitize",
+      1
+    ],
+    [
+      "mattinfra",
+      1
+    ],
+    [
+      "MessariCrypto",
+      1
+    ],
+    [
+      "AvgJoesCrypto",
+      1
+    ],
+    [
+      "Collector_Crypt",
+      1
+    ],
+    [
+      "phygitals",
+      1
+    ],
+    [
+      "Slabzapp",
+      1
+    ],
+    [
+      "tokenterminal",
+      1
+    ]
+  ],
+  "news_categories": [
+    [
+      "ai_compute_datacenters",
+      39
+    ],
+    [
+      "crypto_solana_rwa",
+      33
+    ],
+    [
+      "earnings_guidance_financials",
+      17
+    ],
+    [
+      "macro_rates_policy",
+      16
+    ],
+    [
+      "deals_partnerships_contracts",
+      8
+    ],
+    [
+      "product_ip_media",
+      7
+    ],
+    [
+      "legal_regulatory",
+      7
+    ],
+    [
+      "commodities_energy",
+      4
+    ]
+  ],
+  "assets_mentioned": [
+    [
+      [
+        "Solana",
+        "SOL",
+        "crypto"
+      ],
+      22
+    ],
+    [
+      [
+        "SpaceX",
+        "SPACEX",
+        "equity"
+      ],
+      9
+    ],
+    [
+      [
+        "ServiceNow",
+        "NOW",
+        "equity"
+      ],
+      6
+    ],
+    [
+      [
+        "USD.AI",
+        "CHIP",
+        "crypto"
+      ],
+      4
+    ],
+    [
+      [
+        "NVIDIA",
+        "NVDA",
+        "equity"
+      ],
+      4
+    ],
+    [
+      [
+        "Intel",
+        "INTC",
+        "equity"
+      ],
+      3
+    ],
+    [
+      [
+        "OPEN",
+        "OPEN",
+        "equity"
+      ],
+      3
+    ],
+    [
+      [
+        "Alphabet",
+        "GOOGL",
+        "equity"
+      ],
+      3
+    ],
+    [
+      [
+        "Anthropic PreStocks",
+        "ANTHROPIC",
+        "equity"
+      ],
+      2
+    ],
+    [
+      [
+        "Ethereum",
+        "ETH",
+        "crypto"
+      ],
+      2
+    ],
+    [
+      [
+        "Coinbase",
+        "COIN",
+        "equity"
+      ],
+      2
+    ],
+    [
+      [
+        "Bitcoin",
+        "BTC",
+        "crypto"
+      ],
+      2
+    ],
+    [
+      [
+        "Gold",
+        "GLD",
+        "commodity"
+      ],
+      2
+    ],
+    [
+      [
+        "Microsoft",
+        "MSFT",
+        "equity"
+      ],
+      2
+    ],
+    [
+      [
+        "OpenAI PreStocks",
+        "OPENAI",
+        "equity"
+      ],
+      2
+    ],
+    [
+      [
+        "Zcash",
+        "ZEC",
+        "crypto"
+      ],
+      2
+    ],
+    [
+      [
+        "Nasdaq",
+        "QQQ",
+        "etf"
+      ],
+      2
+    ],
+    [
+      [
+        "Broadcom",
+        "AVGO",
+        "equity"
+      ],
+      2
+    ],
+    [
+      [
+        "Netflix",
+        "NFL",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Amazon",
+        "AMZN",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Circle",
+        "CRCL",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Micron",
+        "MU",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "TSMC",
+        "TSM",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "AMD",
+        "AMD",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Silver",
+        "XAG",
+        "commodity"
+      ],
+      1
+    ],
+    [
+      [
+        "Hyperliquid",
+        "HYPE",
+        "crypto"
+      ],
+      1
+    ],
+    [
+      [
+        "Lockheed",
+        "LMT",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Tesla",
+        "TSLA",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "BlackRock",
+        "BLK",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "eBay",
+        "EBAY",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Wells Fargo",
+        "WFC",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Target",
+        "TGT",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "MegaETH",
+        "MEGA",
+        "crypto"
+      ],
+      1
+    ],
+    [
+      [
+        "Goldman Sachs",
+        "GS",
+        "equity"
+      ],
+      1
+    ],
+    [
+      [
+        "Delta Wellington Ultra Short Treasury On-Chain Fund",
+        "ULTRA",
+        "rwa"
+      ],
+      1
+    ],
+    [
+      [
+        "SoFi Technologies",
+        "SOFI",
+        "equity"
+      ],
+      1
+    ]
+  ],
+  "formats": [
+    [
+      "ticker_or_symbol_language",
+      64
+    ],
+    [
+      "ALL_CAPS_LABEL_COLON",
+      62
+    ],
+    [
+      "numeric_detail",
+      51
+    ],
+    [
+      "tags_brand_account",
+      39
+    ],
+    [
+      "multi_line",
+      37
+    ]
+  ],
+  "asset_counts_by_list": {
+    "all": 304,
+    "stocks": 219,
+    "etfs": 24,
+    "currencies": 15,
+    "metals": 4,
+    "rwas": 15,
+    "majors": 30,
+    "lsts": 1
+  },
+  "asset_counts_by_category": [
+    [
+      "equity",
+      216
+    ],
+    [
+      "crypto",
+      30
+    ],
+    [
+      "etf",
+      24
+    ],
+    [
+      "stablecoin",
+      15
+    ],
+    [
+      "rwa",
+      15
+    ],
+    [
+      "commodity",
+      4
+    ]
+  ],
+  "sample_posts": [
+    {
+      "id": "2064022153750880588",
+      "created_at": "2026-06-08T16:30:03.000Z",
+      "url": "https://x.com/tokens/status/2064022153750880588",
+      "text": "INSIGHT: Leopold Aschenbrenner's Situational Awareness fund is reportedly up ~270% after fees in 2026 through May, and more than 1,000% since launch.\n\n20% of the fund is currently in Anthropic. https://t.co/QcgEDKrf5R",
+      "hook_label": "INSIGHT",
+      "mentions": "",
+      "matched_assets": "Anthropic PreStocks (ANTHROPIC, equity)",
+      "news_categories": "",
+      "like_count": 5,
+      "retweet_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "2064014873630216692",
+      "created_at": "2026-06-08T16:01:08.000Z",
+      "url": "https://x.com/tokens/status/2064014873630216692",
+      "text": "@saylor https://t.co/FOf4otoaM8",
+      "hook_label": "@saylor https",
+      "mentions": "saylor",
+      "matched_assets": "",
+      "news_categories": "",
+      "like_count": 1,
+      "retweet_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "2064014860917395598",
+      "created_at": "2026-06-08T16:01:05.000Z",
+      "url": "https://x.com/tokens/status/2064014860917395598",
+      "text": "JUST IN: @Strategy's shareholders approved paying $STRC preferred dividends semi-monthly instead of monthly.\n\nSame annual rate, twice the frequency. https://t.co/BIHUZGYgYv",
+      "hook_label": "JUST IN",
+      "mentions": "Strategy",
+      "matched_assets": "",
+      "news_categories": "earnings_guidance_financials",
+      "like_count": 5,
+      "retweet_count": 0,
+      "reply_count": 1
+    },
+    {
+      "id": "2064009569702154469",
+      "created_at": "2026-06-08T15:40:03.000Z",
+      "url": "https://x.com/tokens/status/2064009569702154469",
+      "text": "https://t.co/nIwvxAZpSI",
+      "hook_label": "https",
+      "mentions": "",
+      "matched_assets": "",
+      "news_categories": "",
+      "like_count": 1,
+      "retweet_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "2064009556993437941",
+      "created_at": "2026-06-08T15:40:00.000Z",
+      "url": "https://x.com/tokens/status/2064009556993437941",
+      "text": "NEW: @Netflix is bringing back Scooby-Doo. Scooby-Doo: Origins, the franchise's first live-action series, premieres in 2027.\n\n$NFLX is live and tokenized on Solana.\nhttps://t.co/XywrKGL80k",
+      "hook_label": "NEW",
+      "mentions": "netflix",
+      "matched_assets": "Netflix (NFL, equity); Solana (SOL, crypto)",
+      "news_categories": "product_ip_media, crypto_solana_rwa",
+      "like_count": 8,
+      "retweet_count": 1,
+      "reply_count": 3
+    },
+    {
+      "id": "2064004530224943160",
+      "created_at": "2026-06-08T15:20:02.000Z",
+      "url": "https://x.com/tokens/status/2064004530224943160",
+      "text": "LATEST: @OndoPerps is set to go live tomorrow, bringing 24/7 perpetual futures on tokenized stocks and commodities to non-US users, with tokenized stocks as collateral and up to 20x leverage. https://t.co/8KuLi2xSq2",
+      "hook_label": "LATEST",
+      "mentions": "OndoPerps",
+      "matched_assets": "",
+      "news_categories": "earnings_guidance_financials, crypto_solana_rwa",
+      "like_count": 5,
+      "retweet_count": 0,
+      "reply_count": 2
+    },
+    {
+      "id": "2063999762970599594",
+      "created_at": "2026-06-08T15:01:05.000Z",
+      "url": "https://x.com/tokens/status/2063999762970599594",
+      "text": "BREAKING: FTX founder Sam Bankman-Fried has formally applied for a presidential pardon from Donald Trump. https://t.co/M8WN3VVQUe",
+      "hook_label": "BREAKING",
+      "mentions": "",
+      "matched_assets": "",
+      "news_categories": "macro_rates_policy, crypto_solana_rwa, legal_regulatory",
+      "like_count": 8,
+      "retweet_count": 0,
+      "reply_count": 8
+    },
+    {
+      "id": "2063995736946307211",
+      "created_at": "2026-06-08T14:45:05.000Z",
+      "url": "https://x.com/tokens/status/2063995736946307211",
+      "text": "https://t.co/BYPT0KACKh",
+      "hook_label": "https",
+      "mentions": "",
+      "matched_assets": "",
+      "news_categories": "",
+      "like_count": 0,
+      "retweet_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "2063995724581495239",
+      "created_at": "2026-06-08T14:45:02.000Z",
+      "url": "https://x.com/tokens/status/2063995724581495239",
+      "text": "JUST IN: @Amazon signed a multibillion-dollar deal with Corning to supply optical fiber and connectivity for expanding AWS data centers in the US, adding about 1,000 advanced-manufacturing jobs.\n\n$AMZN is live on Solana. https://t.co/l7FejETr9w",
+      "hook_label": "JUST IN",
+      "mentions": "amazon",
+      "matched_assets": "Solana (SOL, crypto); Amazon (AMZN, equity)",
+      "news_categories": "ai_compute_datacenters, deals_partnerships_contracts, macro_rates_policy, crypto_solana_rwa",
+      "like_count": 14,
+      "retweet_count": 2,
+      "reply_count": 2
+    },
+    {
+      "id": "2063991972474560862",
+      "created_at": "2026-06-08T14:30:08.000Z",
+      "url": "https://x.com/tokens/status/2063991972474560862",
+      "text": "https://t.co/LKvyDY4mXT",
+      "hook_label": "https",
+      "mentions": "",
+      "matched_assets": "",
+      "news_categories": "",
+      "like_count": 1,
+      "retweet_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "2063991960231354377",
+      "created_at": "2026-06-08T14:30:05.000Z",
+      "url": "https://x.com/tokens/status/2063991960231354377",
+      "text": "JUST IN: @BitMNR added 126,971 ETH last week, lifting its treasury to 5,543,872 ETH, about 4.59% of all Ethereum. https://t.co/fhdKYxMo97",
+      "hook_label": "JUST IN",
+      "mentions": "BitMNR",
+      "matched_assets": "Ethereum (ETH, crypto)",
+      "news_categories": "macro_rates_policy",
+      "like_count": 9,
+      "retweet_count": 1,
+      "reply_count": 2
+    },
+    {
+      "id": "2063988175593500864",
+      "created_at": "2026-06-08T14:15:02.000Z",
+      "url": "https://x.com/tokens/status/2063988175593500864",
+      "text": "NEW: A coalition of more than 200 crypto companies and groups, including @Coinbase, @Ripple and @Circle, has urged Senate leaders to bring the CLARITY Act to a floor vote \"without delay. https://t.co/3n5GODIn15",
+      "hook_label": "NEW",
+      "mentions": "coinbase, Ripple, circle",
+      "matched_assets": "Coinbase (COIN, equity); Circle (CRCL, equity)",
+      "news_categories": "product_ip_media, crypto_solana_rwa",
+      "like_count": 20,
+      "retweet_count": 4,
+      "reply_count": 1
+    },
+    {
+      "id": "2063984652424196234",
+      "created_at": "2026-06-08T14:01:02.000Z",
+      "url": "https://x.com/tokens/status/2063984652424196234",
+      "text": "Market open: The relief rally accelerates, led by a comeback in the beaten-down chip trade. Intel and Micron jump as semiconductors reverse last week's brutal selloff. https://t.co/JrLFHzHNQu",
+      "hook_label": "Market open",
+      "mentions": "",
+      "matched_assets": "Micron (MU, equity); Intel (INTC, equity); USD.AI (CHIP, crypto); OPEN (OPEN, equity)",
+      "news_categories": "ai_compute_datacenters, macro_rates_policy",
+      "like_count": 4,
+      "retweet_count": 0,
+      "reply_count": 0
+    },
+    {
+      "id": "2063979365416026413",
+      "created_at": "2026-06-08T13:40:02.000Z",
+      "url": "https://x.com/tokens/status/2063979365416026413",
+      "text": "BREAKING: $INTC jumps double digits on a report that Google placed an order for Intel to build 3M+ of its AI chips, with Nvidia also testing Intel's tech, as TSMC struggles to keep up with demand. https://t.co/v8MhIjrQcd",
+      "hook_label": "BREAKING",
+      "mentions": "",
+      "matched_assets": "NVIDIA (NVDA, equity); Alphabet (GOOGL, equity); Intel (INTC, equity); TSMC (TSM, equity)",
+      "news_categories": "ai_compute_datacenters",
+      "like_count": 5,
+      "retweet_count": 0,
+      "reply_count": 1
+    },
+    {
+      "id": "2063974343223427091",
+      "created_at": "2026-06-08T13:20:04.000Z",
+      "url": "https://x.com/tokens/status/2063974343223427091",
+      "text": "https://t.co/ZJTwJ1JO0t",
+      "hook_label": "https",
+      "mentions": "",
+      "matched_assets": "",
+      "news_categories": "",
+      "like_count": 0,
+      "retweet_count": 0,
+      "reply_count": 0
+    }
+  ]
+}
