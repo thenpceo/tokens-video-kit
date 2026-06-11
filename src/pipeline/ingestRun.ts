@@ -9,6 +9,7 @@ import { fetchXTimeline } from '../ingest/x.js';
 import { detectMarketMoves } from '../ingest/marketData.js';
 import { fetchAnalystRatings, fetchMacroPrints } from '../ingest/benzinga.js';
 import { fetchInsiderBuys } from '../ingest/sec.js';
+import { detectMetricMilestones } from '../ingest/metrics.js';
 import {
   loadSourceRegistry, pollableSources, type PollableSource, type SourceRegistry,
 } from '../registry/loadSourceRegistry.js';
@@ -312,6 +313,32 @@ export async function runIngestOnce(
       markLanePolled('form4-insider-buys');
     } catch (err) {
       stats.errors.push(`form4: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+
+  // Metric milestones: crypto ATHs and round-number crossings, every 15 minutes.
+  if (laneDue('metric-milestones', 15)) {
+    try {
+      const milestones = await detectMetricMilestones(db);
+      for (const ms of milestones) {
+        await processCandidate(db, registry, {
+          sourceId: 'metric-milestones',
+          sourceName: 'Metric milestones (CoinGecko)',
+          sourceTier: 'A',
+          sourceRoute: 'p0_eligible',
+          sourceType: 'market_data',
+          headline: ms.headline,
+          body: ms.body,
+          publishedAt: nowUtc(),
+          firstSeenAt: nowUtc(),
+          assetSymbolHint: ms.symbol,
+          clusterKeyHint: ms.externalId,
+        }, ms, 200, null, stats, { postToSlack: post });
+      }
+      stats.sourcesPolled++;
+      markLanePolled('metric-milestones');
+    } catch (err) {
+      stats.errors.push(`metric-milestones: ${err instanceof Error ? err.message : String(err)}`);
     }
   }
 
