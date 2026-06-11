@@ -37,9 +37,15 @@ export async function fetchWithHealth(
       resetBackoff(db, sourceId);
       return { ok: true, status: res.status, body, hash };
     }
-    const type = res.status === 429 ? 'rate_limited' : res.status === 401 || res.status === 403 ? 'auth_failed' : 'http_error';
+    const type =
+      res.status === 429 ? 'rate_limited'
+      : res.status === 402 ? 'credits_exhausted'
+      : res.status === 401 || res.status === 403 ? 'auth_failed'
+      : 'http_error';
     recordHealth(db, sourceId, type, res.status, body.slice(0, 200));
-    bumpBackoff(db, sourceId);
+    // 402 means the provider account is out of credits — retrying per-source
+    // is pure noise, so park the source for 6 hours.
+    bumpBackoff(db, sourceId, res.status === 402 ? 360 : undefined);
     return { ok: false, status: res.status, body, hash, error: type };
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
@@ -85,12 +91,12 @@ export function recordHealth(
   );
 }
 
-function bumpBackoff(db: Database.Database, sourceId: string): void {
+function bumpBackoff(db: Database.Database, sourceId: string, fixedMinutes?: number): void {
   const row = db
     .prepare('SELECT retry_count FROM source_poll_state WHERE source_id = ?')
     .get(sourceId) as { retry_count: number } | undefined;
   const retries = (row?.retry_count ?? 0) + 1;
-  const delayMin = Math.min(120, 2 ** retries); // 2,4,8,... capped at 2h
+  const delayMin = fixedMinutes ?? Math.min(120, 2 ** retries); // 2,4,8,... capped at 2h
   const until = new Date(Date.now() + delayMin * 60_000).toISOString();
   db.prepare(`
     INSERT INTO source_poll_state (source_id, retry_count, backoff_until) VALUES (?,?,?)
