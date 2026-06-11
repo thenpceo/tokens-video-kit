@@ -6,7 +6,7 @@ import type {
   CandidateInput, GateResults, MatchedAsset, Queue, RoutingDecision, ScoreBreakdown,
 } from './types.js';
 
-const MOVEMENT_STRONG = /\b(acqui(res|sition)|merger|bankrupt|halt(s|ed)?|approv(es|ed|al)|ban(s|ned)?|lawsuit|settle(s|ment)|guidance (raise|cut)|beats|misses|record (high|revenue)|partnership|listing|delist|rate (cut|hike)|etf)\b/i;
+const MOVEMENT_STRONG = /\b(acqui(res|sition)|merger|bankrupt|halt(s|ed)?|approv(es|ed|al)|ban(s|ned)?|lawsuit|settle(s|ment)|guidance (raise|cut)|beats|misses|record (high|revenue)|partnership|listing|delist|rate (cut|hike)|etf|ipo|priced? (at|per share)|public offering|(double )?(upgrade|downgrade)[sd]?|surg(es|ed) \d+%|(jumps?|falls?|drops?|plunges?) \d+%)\b/i;
 const MOVEMENT_MILD = /\b(launch(es|ed)?|expand(s|ed)?|integrat(es|ion)|upgrade(s|d)?|surge(s|d)?|drop(s|ped)?|jump(s|ed)?|fell|rall(y|ied)|milestone)\b/i;
 const NUMERIC = /(\$[\d,.]+\s*(billion|million|trillion|[bmk])?|\d+(\.\d+)?%|\d{2,})/i;
 const RUMOR = /\b(rumor|reportedly|sources? (say|familiar)|unconfirmed|may be|could be|allegedly|speculat)/i;
