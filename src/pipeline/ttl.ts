@@ -7,6 +7,8 @@ export const TTL_MINUTES: Record<TtlCategory, number | null> = {
   official_launch: 45,
   tokenized_market_structure: 180,
   onchain_metric_milestone: 360,
+  market_move: 30,
+  analyst_rating: 120,
   commentary: null,
 };
 
@@ -20,7 +22,9 @@ const CATEGORY_HINTS: Array<{ category: TtlCategory; pattern: RegExp }> = [
 
 export function classifyCategory(text: string, sourceType: string): TtlCategory {
   if (sourceType === 'sec_api' || sourceType === 'sec_rss') return 'sec_material_filing';
-  if (sourceType === 'government_macro') return 'breaking_macro';
+  if (sourceType === 'government_macro' || sourceType === 'macro_data') return 'breaking_macro';
+  if (sourceType === 'market_data') return 'market_move';
+  if (sourceType === 'analyst_rating') return 'analyst_rating';
   for (const { category, pattern } of CATEGORY_HINTS) {
     if (pattern.test(text)) return category;
   }

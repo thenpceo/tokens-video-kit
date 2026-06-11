@@ -6,7 +6,9 @@ import type {
   CandidateInput, GateResults, MatchedAsset, Queue, RoutingDecision, ScoreBreakdown,
 } from './types.js';
 
-const MOVEMENT_STRONG = /\b(acqui(res|sition)|merger|bankrupt|halt(s|ed)?|approv(es|ed|al)|ban(s|ned)?|lawsuit|settle(s|ment)|guidance (raise|cut)|beats|misses|record (high|revenue)|partnership|listing|delist|rate (cut|hike)|etf|ipo|priced? (at|per share)|public offering|(double )?(upgrade|downgrade)[sd]?|surg(es|ed) \d+%|(jumps?|falls?|drops?|plunges?) \d+%)\b/i;
+const MOVEMENT_STRONG = /\b(acqui(res|sition)|merger|bankrupt|halt(s|ed)?|approv(es|ed|al)|ban(s|ned)?|lawsuit|settle(s|ment)|guidance (raise|cut)|beats|misses|record (high|revenue)|partnership|listing|delist|rate (cut|hike)|etf|ipo|priced? (at|per share)|public offering|(double )?(upgrade|downgrade)[sd]?|(above|below) expectations)\b/i;
+// Quantified price action ("surges 9.3%") — kept separate because \b cannot sit after '%'.
+const MOVEMENT_PCT = /\b(surg|jump|fall|drop|plung|rall|gain|los|eras)\w{0,3} \$?\d+(\.\d+)?(%|T| trillion| billion)/i;
 const MOVEMENT_MILD = /\b(launch(es|ed)?|expand(s|ed)?|integrat(es|ion)|upgrade(s|d)?|surge(s|d)?|drop(s|ped)?|jump(s|ed)?|fell|rall(y|ied)|milestone)\b/i;
 const NUMERIC = /(\$[\d,.]+\s*(billion|million|trillion|[bmk])?|\d+(\.\d+)?%|\d{2,})/i;
 const RUMOR = /\b(rumor|reportedly|sources? (say|familiar)|unconfirmed|may be|could be|allegedly|speculat)/i;
@@ -29,7 +31,7 @@ export function scoreCandidate(
   const indirect = matched.length - direct;
   const asset_relevance = Math.min(3, direct >= 1 ? 2 + Math.min(1, direct - 1 + (indirect > 0 ? 1 : 0)) : indirect >= 2 ? 2 : indirect === 1 ? 1 : 0);
 
-  const market_movement = MOVEMENT_STRONG.test(text) ? 2 : MOVEMENT_MILD.test(text) ? 1 : 0;
+  const market_movement = MOVEMENT_STRONG.test(text) || MOVEMENT_PCT.test(text) ? 2 : MOVEMENT_MILD.test(text) ? 1 : 0;
 
   const numbers = (text.match(NUMERIC) ?? []).length;
   const specificity = Math.min(2, numbers >= 1 ? (text.length > 120 && numbers >= 1 ? 2 : 1) : 0);

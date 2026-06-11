@@ -6,6 +6,9 @@ import { parseFeed } from '../ingest/rss.js';
 import { fetchSecFilings } from '../ingest/sec.js';
 import { fetchCryptoPanic } from '../ingest/cryptopanic.js';
 import { fetchXTimeline } from '../ingest/x.js';
+import { detectMarketMoves } from '../ingest/marketData.js';
+import { fetchAnalystRatings, fetchMacroPrints } from '../ingest/benzinga.js';
+import { fetchInsiderBuys } from '../ingest/sec.js';
 import {
   loadSourceRegistry, pollableSources, type PollableSource, type SourceRegistry,
 } from '../registry/loadSourceRegistry.js';
@@ -185,6 +188,130 @@ export async function runIngestOnce(
       const msg = err instanceof Error ? err.message : String(err);
       stats.errors.push(`${source.sourceId}: ${msg}`);
       recordHealth(db, source.sourceId, 'http_error', undefined, msg);
+    }
+  }
+
+  // --- Data lanes (synthetic candidates from market/calendar data) ---
+
+  const laneDue = (laneId: string, intervalMin: number): boolean => {
+    const row = db.prepare('SELECT last_polled_at FROM source_poll_state WHERE source_id = ?')
+      .get(laneId) as { last_polled_at: string | null } | undefined;
+    if (opts.onlyDue === false) return true;
+    if (!row?.last_polled_at) return true;
+    return (Date.now() - new Date(row.last_polled_at).getTime()) / 60_000 >= intervalMin;
+  };
+  const markLanePolled = (laneId: string): void => {
+    db.prepare(`
+      INSERT INTO source_poll_state (source_id, last_polled_at) VALUES (?, ?)
+      ON CONFLICT(source_id) DO UPDATE SET last_polled_at = excluded.last_polled_at
+    `).run(laneId, nowUtc());
+  };
+
+  // Market movers: Finnhub equities + CoinGecko crypto, every 5 minutes.
+  if (laneDue('market-movers', 5)) {
+    try {
+      const moves = await detectMarketMoves(db, registry, env.FINNHUB_API_KEY);
+      for (const m of moves) {
+        await processCandidate(db, registry, {
+          sourceId: 'market-movers',
+          sourceName: 'Market data (Finnhub/CoinGecko)',
+          sourceTier: 'A',
+          sourceRoute: 'p0_eligible',
+          sourceType: 'market_data',
+          headline: m.headline,
+          body: m.body,
+          publishedAt: nowUtc(),
+          firstSeenAt: nowUtc(),
+          assetSymbolHint: m.symbol,
+          clusterKeyHint: `${m.symbol}-${nowUtc().slice(0, 10)}-${m.pctChange >= 0 ? 'up' : 'down'}`,
+        }, m, 200, null, stats, { postToSlack: post });
+      }
+      stats.sourcesPolled++;
+      markLanePolled('market-movers');
+    } catch (err) {
+      stats.errors.push(`market-movers: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+
+  // Analyst ratings: Benzinga, every 10 minutes.
+  if (env.BENZINGA_API_KEY && laneDue('benzinga-ratings', 10)) {
+    try {
+      const tickers = registry.asset_sources.map((a) => a.symbol);
+      const ratings = await fetchAnalystRatings(db, env.BENZINGA_API_KEY, tickers);
+      for (const r of ratings) {
+        await processCandidate(db, registry, {
+          sourceId: 'benzinga-ratings',
+          sourceName: 'Analyst ratings (Benzinga)',
+          sourceTier: 'A',
+          sourceRoute: 'p0_eligible',
+          sourceType: 'analyst_rating',
+          headline: r.headline,
+          body: r.body,
+          url: r.url,
+          publishedAt: r.publishedAt ?? nowUtc(),
+          firstSeenAt: nowUtc(),
+          assetSymbolHint: r.ticker,
+          clusterKeyHint: r.externalId,
+        }, r, 200, null, stats, { postToSlack: post });
+      }
+      stats.sourcesPolled++;
+      markLanePolled('benzinga-ratings');
+    } catch (err) {
+      stats.errors.push(`benzinga-ratings: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+
+  // Macro prints: Benzinga economics calendar, every 5 minutes.
+  if (env.BENZINGA_API_KEY && laneDue('benzinga-economics', 5)) {
+    try {
+      const prints = await fetchMacroPrints(db, env.BENZINGA_API_KEY);
+      for (const p of prints) {
+        await processCandidate(db, registry, {
+          sourceId: 'benzinga-economics',
+          sourceName: 'US macro print (Benzinga)',
+          sourceTier: 'A',
+          sourceRoute: 'p0_eligible_if_official_or_trusted',
+          sourceType: 'macro_data',
+          headline: p.headline,
+          body: p.body,
+          publishedAt: p.publishedAt ?? nowUtc(),
+          firstSeenAt: nowUtc(),
+          clusterKeyHint: p.externalId,
+        }, p, 200, null, stats, { postToSlack: post });
+      }
+      stats.sourcesPolled++;
+      markLanePolled('benzinga-economics');
+    } catch (err) {
+      stats.errors.push(`benzinga-economics: ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+
+  // Insider buys: Form 4 scan across CIK-mapped assets, every 60 minutes.
+  if (laneDue('form4-insider-buys', 60)) {
+    try {
+      for (const a of registry.asset_sources) {
+        if (!a.sec_cik) continue;
+        const buys = await fetchInsiderBuys(db, `${a.asset_id}-form4`, a.sec_cik, a.name, a.symbol);
+        for (const b of buys) {
+          await processCandidate(db, registry, {
+            sourceId: `${a.asset_id}-form4`,
+            sourceName: `${a.name} insider filings (SEC)`,
+            sourceTier: 'A',
+            sourceRoute: 'p0_eligible',
+            sourceType: 'sec_api',
+            headline: b.headline,
+            url: b.url,
+            publishedAt: new Date(`${b.filedDate}T20:00:00Z`).toISOString(),
+            firstSeenAt: nowUtc(),
+            assetSymbolHint: a.symbol,
+            clusterKeyHint: b.accessionNumber,
+          }, b, 200, null, stats, { postToSlack: post });
+        }
+      }
+      stats.sourcesPolled++;
+      markLanePolled('form4-insider-buys');
+    } catch (err) {
+      stats.errors.push(`form4: ${err instanceof Error ? err.message : String(err)}`);
     }
   }
 

@@ -8,6 +8,8 @@ export type TtlCategory =
   | 'official_launch'
   | 'tokenized_market_structure'
   | 'onchain_metric_milestone'
+  | 'market_move'
+  | 'analyst_rating'
   | 'commentary';
 
 export interface MatchedAsset {
