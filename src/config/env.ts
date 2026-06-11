@@ -31,6 +31,8 @@ const EnvSchema = z.object({
   // explicit degraded/disabled state rather than crashing the worker.
   SEC_USER_AGENT: z.string().default('TokensPostabilityEngine/0.1 (nicholas@smok3.io)'),
   X_BEARER_TOKEN: z.string().optional(),
+  X_CONSUMER_KEY: z.string().optional(),
+  X_CONSUMER_SECRET: z.string().optional(),
   TWITTERAPI_IO_KEY: z.string().optional(),
   CRYPTOPANIC_API_KEY: z.string().optional(),
   BENZINGA_API_KEY: z.string().optional(),

@@ -92,7 +92,7 @@ export async function runIngestOnce(
   };
 
   let pollable = all.filter(
-    (s) => s.kind === 'rss' || s.kind === 'sec_api' || (s.kind === 'x' && xEnabled && env.TWITTERAPI_IO_KEY),
+    (s) => s.kind === 'rss' || s.kind === 'sec_api' || (s.kind === 'x' && xEnabled),
   );
   if (!xEnabled) {
     // Explicit degraded mode: X sources exist but are not polled.
@@ -135,8 +135,11 @@ export async function runIngestOnce(
             assetSymbolHint: source.assetSymbol,
           }, item, res.status, res.hash, stats, { postToSlack: post });
         }
-      } else if (source.kind === 'x' && source.xHandle && env.TWITTERAPI_IO_KEY) {
-        const tweets = await fetchXTimeline(db, source.sourceId, env.TWITTERAPI_IO_KEY, source.xHandle);
+      } else if (source.kind === 'x' && source.xHandle && xEnabled) {
+        const tweets = await fetchXTimeline(db, source.sourceId, {
+          twitterApiIoKey: env.TWITTERAPI_IO_KEY,
+          bearerToken: env.X_BEARER_TOKEN,
+        }, source.xHandle);
         for (const tweet of tweets.slice(0, 10)) {
           if (tweet.isReply) continue; // thread context is best-effort in v1
           await processCandidate(db, registry, {
