@@ -6,10 +6,10 @@ import type {
   CandidateInput, GateResults, MatchedAsset, Queue, RoutingDecision, ScoreBreakdown,
 } from './types.js';
 
-const MOVEMENT_STRONG = /\b(acqui(res|sition)|merger|bankrupt|halt(s|ed)?|approv(es|ed|al)|ban(s|ned)?|lawsuit|settle(s|ment)|guidance (raise|cut)|beats|misses|record (high|revenue)|partnership|listing|delist|rate (cut|hike)|etf|ipo|priced? (at|per share)|public offering|(double )?(upgrade|downgrade)[sd]?|(above|below) expectations)\b/i;
+const MOVEMENT_STRONG = /\b(acquir\w*|acquisition|merger|bankrupt|halt(s|ed)?|approv(es|ed|al)|ban(s|ned)?|lawsuit|settle(s|ment)|guidance (raise|cut)|beats|misses|record (high|revenue)|partnership|listing|delist|rate (cut|hike)|etf|ipo|priced? (at|per share)|public offering|(double )?(upgrade|downgrade)[sd]?|(above|below) expectations)\b/i;
 // Quantified price action ("surges 9.3%") — kept separate because \b cannot sit after '%'.
 const MOVEMENT_PCT = /\b(surg|jump|fall|drop|plung|rall|gain|los|eras)\w{0,3} \$?\d+(\.\d+)?(%|T| trillion| billion)/i;
-const MOVEMENT_MILD = /\b(launch(es|ed)?|expand(s|ed)?|integrat(es|ion)|upgrade(s|d)?|surge(s|d)?|drop(s|ped)?|jump(s|ed)?|fell|rall(y|ied)|milestone)\b/i;
+const MOVEMENT_MILD = /\b(launch(es|ed)?|expand(s|ed)?|integrat(es|ion)|upgrade(s|d)?|surge(s|d)?|drop(s|ped)?|jump(s|ed)?|fell|rall(y|ied)|milestone|commit(s|ted)? \$|invest(s|ed)? \$|raises? \$|(buys?|accumulat(es|ed)) \$|releases?|unveil(s|ed)?|introduc(es|ed))\b/i;
 const NUMERIC = /(\$[\d,.]+\s*(billion|million|trillion|[bmk])?|\d+(\.\d+)?%|\d{2,})/i;
 const RUMOR = /\b(rumor|reportedly|sources? (say|familiar)|unconfirmed|may be|could be|allegedly|speculat)/i;
 const THESIS = /\b(tokenized|tokenization|onchain|on-chain|solana|rwa|stablecoin|xstocks|24\/7 trading|crypto|digital asset)\b/i;
@@ -38,7 +38,12 @@ export function scoreCandidate(
 
   const timeliness = fresh ? 1 : 0;
 
-  const thesis_fit = THESIS.test(text) ? 2 : matched.some((m) => m.matchType === 'topic_rule') ? 1 : 0;
+  // Direct-match floor: every registry asset is tradable on Solana, so a
+  // story directly about one always carries the "live on Solana" bridge.
+  const hasDirect = matched.some((m) => m.matchType === 'direct' || m.matchType === 'source_default');
+  const thesis_fit = THESIS.test(text) || hasDirect
+    ? 2
+    : matched.some((m) => m.matchType === 'topic_rule') ? 1 : 0;
 
   const total = asset_relevance + market_movement + specificity + timeliness + thesis_fit;
   return { asset_relevance, market_movement, specificity, timeliness, thesis_fit, total };
@@ -128,6 +133,15 @@ export function evaluateCandidate(
     // p0_eligible_if_verified / if_official_or_trusted: verified gate already passed here.
     queue = 'P0_POST_NOW';
   } else if (gates.trusted_source.pass && score.total >= 6 && gates.fresh.pass) {
+    queue = 'P1_VERIFY';
+  } else if (
+    input.sourceTier === 'C' &&
+    ttl.fresh &&
+    score.total >= 5 &&
+    matched.some((m) => m.matchType === 'direct' || m.matchType === 'source_default')
+  ) {
+    // Fresh detector scoop directly about a tradable asset: surface for
+    // verification rather than burying it (P1 is allowed to be noisy).
     queue = 'P1_VERIFY';
   } else if (score.total >= 4 || (!gates.fresh.pass && gates.relevant.pass && score.total >= 3)) {
     queue = 'P2_ROUNDUP';

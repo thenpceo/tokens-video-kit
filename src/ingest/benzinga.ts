@@ -115,13 +115,22 @@ export async function fetchMacroPrints(
   }
   recordHealth(db, sourceId, 'success', 200);
 
+  // One card per release family per day: "PPI (YoY)", "Core PPI (MoM)", and
+  // "PPI ex. Food/Energy" are one story, not five. Prefer YoY, then importance.
+  const eventFamily = (name: string): string =>
+    name.replace(/\s*\(.*?\)/g, '').replace(/^US /i, '').replace(/^Core /i, '').replace(/\s+ex\..*$/i, '').trim().toLowerCase();
+  const printed = (data.economics ?? []).filter((e: any) =>
+    e.id && e.country === 'USA' && e.actual !== undefined && e.actual !== null && e.actual !== '');
+  printed.sort((a: any, b: any) =>
+    Number(String(b.event_name).includes('(YoY)')) - Number(String(a.event_name).includes('(YoY)')) ||
+    Number(b.importance ?? 0) - Number(a.importance ?? 0));
+
   const out: MacroPrintEvent[] = [];
-  for (const e of data.economics ?? []) {
-    if (!e.id || e.country !== 'USA') continue;
-    if (e.actual === undefined || e.actual === null || e.actual === '') continue; // not printed yet
+  for (const e of printed) {
     const name = String(e.event_name ?? '');
     const important = Number(e.importance ?? 0) >= 4 || MACRO_EVENTS.test(name);
     if (!important) continue;
+    if (alreadyEmitted(db, 'econ-family', `${eventFamily(name)}:${e.date}`)) continue;
     if (alreadyEmitted(db, 'economics', String(e.id))) continue;
 
     const fmt = (v: unknown, t: unknown) => {

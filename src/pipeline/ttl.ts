@@ -17,10 +17,13 @@ const CATEGORY_HINTS: Array<{ category: TtlCategory; pattern: RegExp }> = [
   { category: 'breaking_macro', pattern: /\b(CPI|PPI|nonfarm|jobs report|fed (cuts|hikes|holds)|rate (cut|hike)|FOMC|tariff|ceasefire|GDP)\b/i },
   { category: 'tokenized_market_structure', pattern: /\b(tokenized|xStocks|RWA|onchain (fund|treasury)|stablecoin|24\/7 trading|tokenization)\b/i },
   { category: 'onchain_metric_milestone', pattern: /\b(TVL|all-time high|milestone|surpass(es|ed)?|crosses) \$?[\d,.]+[BMK]?\b/i },
-  { category: 'official_launch', pattern: /\b(launch(es|ed)?|partner(ship|s with)|announc(es|ed)|unveil(s|ed)?|introduc(es|ed)|acqui(res|sition)|integrat(es|ion))\b/i },
+  { category: 'official_launch', pattern: /\b(launch(es|ed|ing)?|partner(ship|s with)|announc(es|ed|ing)|unveil(s|ed)?|introduc(es|ed|ing)|acquir\w*|acquisition|integrat(es|ion)|ipo|investment[- ]grade|credit rating|commits? \$|meet [A-Z@$])/i },
 ];
 
+const RETROSPECTIVE = /\b(\d+ years? ago|anniversary|birthday|throwback|on this day)\b/i;
+
 export function classifyCategory(text: string, sourceType: string): TtlCategory {
+  if (RETROSPECTIVE.test(text)) return 'commentary'; // nostalgia is never breaking
   if (sourceType === 'sec_api' || sourceType === 'sec_rss') return 'sec_material_filing';
   if (sourceType === 'government_macro' || sourceType === 'macro_data') return 'breaking_macro';
   if (sourceType === 'market_data') return 'market_move';
