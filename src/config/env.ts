@@ -21,6 +21,9 @@ const EnvSchema = z.object({
 
   // Slack: webhook is the v1 posting path; bot token + signing secret enable
   // interactive buttons once a Slack app exists.
+  // Master switch: when 'false', the pipeline runs fully (ingest, gates,
+  // routing, traces) but no cards are sent to Slack.
+  SLACK_POSTING_ENABLED: z.enum(['true', 'false']).default('true').transform((v) => v === 'true'),
   SLACK_WEBHOOK_URL: z.string().url().optional(),
   SLACK_BOT_TOKEN: z.string().optional(),
   SLACK_SIGNING_SECRET: z.string().optional(),
@@ -74,8 +77,10 @@ export function connectorStatuses(env: Env = getEnv()): ConnectorStatus[] {
     { name: 'sec', enabled: true },
     {
       name: 'slack_post',
-      enabled: Boolean(env.SLACK_WEBHOOK_URL || env.SLACK_BOT_TOKEN),
-      reason: env.SLACK_WEBHOOK_URL || env.SLACK_BOT_TOKEN ? undefined : 'no SLACK_WEBHOOK_URL or SLACK_BOT_TOKEN',
+      enabled: env.SLACK_POSTING_ENABLED && Boolean(env.SLACK_WEBHOOK_URL || env.SLACK_BOT_TOKEN),
+      reason: !env.SLACK_POSTING_ENABLED
+        ? 'paused via SLACK_POSTING_ENABLED=false (testing mode)'
+        : env.SLACK_WEBHOOK_URL || env.SLACK_BOT_TOKEN ? undefined : 'no SLACK_WEBHOOK_URL or SLACK_BOT_TOKEN',
     },
     {
       name: 'slack_interactive',

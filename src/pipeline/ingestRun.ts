@@ -105,7 +105,7 @@ export async function runIngestOnce(
   if (opts.onlyDue !== false) pollable = dueSources(db, pollable);
   if (opts.maxSources) pollable = pollable.slice(0, opts.maxSources);
 
-  const post = opts.postToSlack ?? true;
+  const post = (opts.postToSlack ?? true) && env.SLACK_POSTING_ENABLED;
 
   for (const source of pollable) {
     stats.sourcesPolled++;
