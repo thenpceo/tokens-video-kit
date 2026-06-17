@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" data-composition-variables='[
+  {"id":"breaking_line1","type":"string","label":"Scene 1 line 1","default":"BREAKING:"},
+  {"id":"breaking_line2","type":"string","label":"Scene 1 line 2","default":"NEW RECORD HIGH"},
+  {"id":"stat_prefix","type":"string","label":"Stat prefix","default":"$"},
+  {"id":"stat_value","type":"number","label":"Stat value (counts up to)","default":100},
+  {"id":"stat_suffix","type":"string","label":"Stat suffix","default":"M"},
+  {"id":"stat_label","type":"string","label":"Stat label","default":"Volume"},
+  {"id":"scene3_heading","type":"string","label":"Scene 3 heading","default":"Tokenized Equities"},
+  {"id":"cube1","type":"string","label":"Cube 1 logo","default":"assets/cube1.svg"},
+  {"id":"cube2","type":"string","label":"Cube 2 logo","default":"assets/cube2.svg"},
+  {"id":"cube3","type":"string","label":"Cube 3 logo","default":"assets/cube3.svg"},
+  {"id":"cube4","type":"string","label":"Cube 4 logo","default":"assets/cube4.svg"},
+  {"id":"cube5","type":"string","label":"Cube 5 logo","default":"assets/cube5.svg"},
+  {"id":"cube6","type":"string","label":"Cube 6 logo","default":"assets/cube6.svg"},
+  {"id":"cube7","type":"string","label":"Cube 7 logo","default":"assets/cube7.svg"},
+  {"id":"music","type":"string","label":"Music bed (wav/mp3)","default":"assets/bgm.wav"}
+]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px; height: 1080px; overflow: hidden;
+        background: #ffffff;
+        font-family: "Inter", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ---- scenes ---- */
+      .scene {
+        position: absolute; inset: 0; width: 1920px; height: 1080px;
+        transform-origin: 50% 50%;
+        background: radial-gradient(120% 120% at 50% 0%, #ffffff 60%, #f5f5f8 100%);
+      }
+      .s1 { z-index: 1; } .s2 { z-index: 2; } .s3 { z-index: 3; } .s4 { z-index: 4; }
+
+      /* ---- SCENE 1 ---- */
+      #logo3d {
+        position: absolute; inset: 0; width: 1920px; height: 1080px; opacity: 1;
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0.40));
+        mask-image: linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0.40));
+      }
+      .s1-text { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); text-align: center; z-index: 2; }
+      .s1-l1 { font-size: 180px; font-weight: 600; letter-spacing: -9px; line-height: 1; color: #323236; white-space: nowrap; }
+      .s1-l2 { font-size: 110px; font-weight: 600; letter-spacing: -9px; line-height: 1; color: #5A5A62; margin-top: 30px; white-space: nowrap; }
+      .ltr { display: inline-block; will-change: transform, opacity; }
+      .ltr.sp { width: 0.34em; }
+
+      /* ---- SCENE 2 (chart) ---- */
+      .s2-stage { position: absolute; inset: 0; transform-origin: 0% 100%; }
+      .chart-svg { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      #chartLine { filter: drop-shadow(0 0 9px rgba(20, 241, 149, 0.5)); }
+      #chartDot { filter: drop-shadow(0 0 9px rgba(20, 241, 149, 0.85)); }
+      .s2-info { position: absolute; left: 1010px; top: 612px; width: 800px; z-index: 3; text-align: left; }
+      .s2-num { font-size: 202px; font-weight: 600; letter-spacing: -9px; line-height: 0.9; color: #323236; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .s2-sub { display: flex; align-items: center; gap: 18px; margin-top: 22px; padding-left: 4px; }
+      .s2-label { font-size: 34px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #323236; }
+      .s2-tri { width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 32px solid #00bb7f; }
+
+      /* ---- SCENE 3 (cubes) ---- */
+      .s3-head { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center; white-space: nowrap; font-size: 125px; font-weight: 600; letter-spacing: -9px; color: #323236; line-height: 1; z-index: 3; }
+      .seam { position: absolute; top: 0; left: 0; right: 0; height: 24px; z-index: 6; background: linear-gradient(90deg, #14f195, #0bbf7a); box-shadow: 0 6px 44px rgba(20, 241, 149, 0.55); }
+      .conveyor { position: absolute; inset: 0; z-index: 2; }
+      .cube { position: absolute; width: 250px; will-change: transform; }
+      .cube img { width: 100%; height: auto; display: block; }
+      .cube::after { content: ""; position: absolute; left: 22%; right: 22%; top: 72%; height: 30px; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, rgba(15,15,22,0.30), rgba(15,15,22,0)); filter: blur(6px); z-index: -1; }
+      .cube:nth-child(1) img { filter: blur(1.4px); }
+      .cube:nth-child(2) img { filter: blur(0.6px); }
+
+      /* ---- SCENE 4 (outro) ---- */
+      .s4-lockup { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 30px; }
+      .mark-wrap { position: relative; width: 92px; height: 92px; }
+      .s4-mark { width: 92px; height: 92px; display: block; will-change: transform; }
+      .glint { position: absolute; top: -50%; left: 0; width: 46px; height: 200%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.95), transparent); transform: rotate(18deg); mix-blend-mode: screen; pointer-events: none; }
+      .s4-wordmark { height: 88px; width: auto; will-change: clip-path; }
+
+      /* ---- vignette + grain (whole-piece grade) ---- */
+      .vignette-fill { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(125% 105% at 50% 45%, transparent 58%, rgba(18, 18, 28, 0.18) 100%); }
+      .grain { position: absolute; inset: 0; z-index: 20; pointer-events: none; }
+      .grain-fill { position: absolute; inset: 0; opacity: 0.05; mix-blend-mode: multiply; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 180px 180px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="14" data-width="1920" data-height="1080">
+
+      <!-- SCENE 1 — 3D logo + headline -->
+      <div id="scene-1" class="scene s1 clip" data-start="0" data-duration="2.8" data-track-index="1">
+        <canvas id="logo3d" width="1920" height="1080"></canvas>
+        <div class="s1-text" data-layout-allow-overflow>
+          <div class="s1-l1" id="s1l1">BREAKING:</div>
+          <div class="s1-l2" id="s1l2" style="z-index:0">NEW RECORD HIGH</div>
+        </div>
+      </div>
+
+      <!-- SCENE 2 — chart + counting stat -->
+      <div id="scene-2" class="scene s2 clip" data-start="2.7" data-duration="3.9" data-track-index="2">
+        <div class="s2-stage">
+          <svg class="chart-svg" viewBox="0 0 1920 1050" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#42a87d" stop-opacity="0.34" />
+                <stop offset="100%" stop-color="#9ee4c6" stop-opacity="0.0" />
+              </linearGradient>
+              <linearGradient id="strokeGrad" x1="1920" y1="-16" x2="0" y2="1041" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#42a87d" /><stop offset="1" stop-color="#9ee4c6" />
+              </linearGradient>
+            </defs>
+            <path id="chartFill" fill="url(#fillGrad)" stroke="none" d="M0 1047.22C6.48549 1028.06 26.3547 989.737 53.9475 989.737C88.4385 989.737 88.4385 1047.22 132.658 1047.22C176.877 1047.22 177.761 979.124 207.83 962.321C237.9 945.518 254.703 896.876 309.535 907.489C364.367 918.102 340.488 1022.46 384.707 1016.27C428.927 1010.08 432.464 884.495 473.146 873.883C513.828 863.27 504.099 962.321 565.122 962.321C626.145 962.321 674.786 697.005 701.317 577.613C727.849 458.221 769.415 266.31 806.559 263.657C843.703 261.004 850.778 467.065 894.998 464.412C939.217 461.759 934.795 299.031 976.361 281.344C1017.93 263.657 1020.58 437.88 1051.53 437.88C1082.49 437.88 1170.93 282.229 1218.68 332.638C1266.44 383.048 1269.98 516.591 1310.66 505.978C1351.34 495.365 1361.95 385.702 1395.56 359.17C1429.17 332.638 1469.85 355.632 1500.8 314.951C1531.75 274.269 1551.21 176.102 1613.12 176.102C1675.03 176.102 1697.13 47.2031 1742.24 43.4445C1787.34 39.6859 1783.8 93.8545 1837.75 93.8545C1886.23 93.8545 1920 18.6817 1920 -22 L1920 1050 L0 1050 Z" />
+            <path id="chartLine" fill="none" stroke="url(#strokeGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M0 1047.22C6.48549 1028.06 26.3547 989.737 53.9475 989.737C88.4385 989.737 88.4385 1047.22 132.658 1047.22C176.877 1047.22 177.761 979.124 207.83 962.321C237.9 945.518 254.703 896.876 309.535 907.489C364.367 918.102 340.488 1022.46 384.707 1016.27C428.927 1010.08 432.464 884.495 473.146 873.883C513.828 863.27 504.099 962.321 565.122 962.321C626.145 962.321 674.786 697.005 701.317 577.613C727.849 458.221 769.415 266.31 806.559 263.657C843.703 261.004 850.778 467.065 894.998 464.412C939.217 461.759 934.795 299.031 976.361 281.344C1017.93 263.657 1020.58 437.88 1051.53 437.88C1082.49 437.88 1170.93 282.229 1218.68 332.638C1266.44 383.048 1269.98 516.591 1310.66 505.978C1351.34 495.365 1361.95 385.702 1395.56 359.17C1429.17 332.638 1469.85 355.632 1500.8 314.951C1531.75 274.269 1551.21 176.102 1613.12 176.102C1675.03 176.102 1697.13 47.2031 1742.24 43.4445C1787.34 39.6859 1783.8 93.8545 1837.75 93.8545C1886.23 93.8545 1920 18.6817 1920 -22" />
+            <circle id="chartDot" r="14" fill="#42a87d" stroke="#ffffff" stroke-width="4" cx="0" cy="1047" />
+          </svg>
+          <div class="s2-info" data-layout-allow-overflow>
+            <div class="s2-num" id="s2num">$0M</div>
+            <div class="s2-sub" id="s2sub">
+              <div class="s2-label" id="s2label">Volume</div>
+              <div class="s2-tri" id="s2tri"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCENE 3 — heading + token cubes (conveyor offset is intentional, keep it) -->
+      <div id="scene-3" class="scene s3 clip" data-start="5.8" data-duration="3.5" data-track-index="3">
+        <div class="seam"></div>
+        <div class="s3-head" id="s3head" data-layout-allow-occlusion>Tokenized Equities</div>
+        <div class="conveyor" data-layout-allow-overflow style="--ox:-1005px; translate: var(--ox,0px) 0px">
+          <div class="cube" style="left:900px;  top:640px;"> <img id="cimg1" src="assets/cube1.svg" alt="" /></div>
+          <div class="cube" style="left:1050px; top:712px;"><img id="cimg2" src="assets/cube2.svg" alt="" /></div>
+          <div class="cube" style="left:1200px; top:784px;"><img id="cimg3" src="assets/cube3.svg" alt="" /></div>
+          <div class="cube" style="left:1350px; top:856px;"><img id="cimg4" src="assets/cube4.svg" alt="" /></div>
+          <div class="cube" style="left:1500px; top:928px;"><img id="cimg5" src="assets/cube5.svg" alt="" /></div>
+          <div class="cube" style="left:1650px; top:1000px;"><img id="cimg6" src="assets/cube6.svg" alt="" /></div>
+          <div class="cube" style="left:1800px; top:1072px;"><img id="cimg7" src="assets/cube7.svg" alt="" /></div>
+        </div>
+      </div>
+
+      <!-- SCENE 4 — logo + wordmark outro -->
+      <div id="scene-4" class="scene s4 clip" data-start="8.2" data-duration="5.7" data-track-index="4">
+        <div class="s4-lockup">
+          <div class="mark-wrap">
+            <img class="s4-mark" id="mark" src="assets/logo.svg" alt="Tokens" />
+            <div class="glint" id="glint"></div>
+          </div>
+          <img class="s4-wordmark" id="wordmark" src="assets/wordmark.svg" alt="tokens.xyz" />
+        </div>
+      </div>
+
+      <!-- whole-piece grade -->
+      <div class="grain clip" data-start="0" data-duration="14" data-track-index="13"><div class="grain-fill"></div><div class="vignette-fill"></div></div>
+
+      <!-- chromatic RGB-shift filter (driven from the timeline) -->
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+        <filter id="rgbShift" x="-20%" y="-20%" width="140%" height="140%">
+          <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="cr"/>
+          <feOffset in="cr" id="abR" dx="0" dy="0" result="ro"/>
+          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="cg"/>
+          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="cb"/>
+          <feOffset in="cb" id="abB" dx="0" dy="0" result="bo"/>
+          <feBlend in="ro" in2="cg" mode="screen" result="rg"/>
+          <feBlend in="rg" in2="bo" mode="screen"/>
+        </filter>
+      </defs></svg>
+
+      <!-- AUDIO: bed + SFX. (music bed is swappable via the `music` variable) -->
+      <audio id="a-bgm"   src="assets/bgm.wav"        data-start="0"    data-duration="14"  data-track-index="6"  data-volume="0.5"></audio>
+      <audio id="a-wh1"   src="assets/whoosh.wav"     data-start="2.45" data-duration="0.6" data-track-index="7"  data-volume="0.55"></audio>
+      <audio id="a-riser" src="assets/riser-cine2.wav" data-start="2.5" data-duration="2.0" data-track-index="8"  data-volume="0.55"></audio>
+      <audio id="a-slot"  src="assets/slot.wav"       data-start="3.5"  data-duration="1.31" data-track-index="16" data-volume="0.58"></audio>
+      <audio id="a-thump" src="assets/thump.wav"      data-start="4.78" data-duration="0.5" data-track-index="9"  data-volume="0.75"></audio>
+      <audio id="a-wh2"   src="assets/whoosh.wav"     data-start="6.05" data-duration="0.6" data-track-index="7"  data-volume="0.6"></audio>
+      <audio id="a-wh3"   src="assets/whoosh.wav"     data-start="6.1"  data-duration="0.6" data-track-index="10" data-volume="0.45"></audio>
+      <audio id="a-wh4"   src="assets/whoosh.wav"     data-start="7.55" data-duration="0.6" data-track-index="15" data-volume="0.45"></audio>
+      <audio id="a-logo"  src="assets/whoosh-soft.wav" data-start="8.5" data-duration="0.9" data-track-index="11" data-volume="0.5"></audio>
+      <audio id="a-type"  src="assets/typing-v2.wav"  data-start="9.9"  data-duration="0.95" data-track-index="14" data-volume="0.3"></audio>
+      <audio id="a-spark" src="assets/sparkle.wav"    data-start="12.2" data-duration="0.6" data-track-index="12" data-volume="0.125"></audio>
+    </div>
+
+    <script>
+      /* ---------- variables (swap copy / cubes / music without editing code) ---------- */
+      var V = (window.__hyperframes && window.__hyperframes.getVariables) ? window.__hyperframes.getVariables() : {};
+      function vv(k, d) { return (V[k] !== undefined && V[k] !== null && V[k] !== "") ? V[k] : d; }
+      document.getElementById("s1l1").textContent = vv("breaking_line1", "BREAKING:");
+      document.getElementById("s1l2").textContent = vv("breaking_line2", "NEW RECORD HIGH");
+      document.getElementById("s2label").textContent = vv("stat_label", "Volume");
+      document.getElementById("s3head").textContent = vv("scene3_heading", "Tokenized Equities");
+      for (var ci = 1; ci <= 7; ci++) { document.getElementById("cimg" + ci).src = vv("cube" + ci, "assets/cube" + ci + ".svg"); }
+      document.getElementById("a-bgm").src = vv("music", "assets/bgm.wav");
+      var STAT_PRE = vv("stat_prefix", "$"), STAT_SUF = vv("stat_suffix", "M"), STAT_TARGET = Number(vv("stat_value", 100));
+
+      /* ---------- helpers ---------- */
+      function splitToSpans(el) {
+        var text = el.textContent; el.textContent = ""; var spans = [];
+        for (var i = 0; i < text.length; i++) {
+          var ch = text[i]; var s = document.createElement("span");
+          s.className = "ltr" + (ch === " " ? " sp" : "");
+          s.textContent = ch === " " ? " " : ch;
+          el.appendChild(s); if (ch !== " ") spans.push(s);
+        }
+        return spans;
+      }
+      var s1l1 = splitToSpans(document.getElementById("s1l1"));
+      var s1l2 = splitToSpans(document.getElementById("s1l2"));
+      var s3head = splitToSpans(document.getElementById("s3head"));
+      var cubeEls = Array.prototype.slice.call(document.querySelectorAll(".cube"));
+
+      var s2numEl = document.getElementById("s2num");
+      var count = { v: 0 };
+      function renderCount() { s2numEl.textContent = STAT_PRE + Math.round(count.v) + STAT_SUF; }
+      renderCount();
+
+      /* ===================================================================
+         THREE.JS — metallic 3D Tokens mark (4 thick disks)
+      =================================================================== */
+      var canvas = document.getElementById("logo3d");
+      var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true, preserveDrawingBuffer: true });
+      renderer.setSize(1920, 1080, false); renderer.setPixelRatio(1);
+      var scene3d = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(35, 1920 / 1080, 0.1, 100);
+      camera.position.set(0, 0, 9);
+
+      var envCanvas = document.createElement("canvas"); envCanvas.width = 16; envCanvas.height = 256;
+      var ectx = envCanvas.getContext("2d");
+      var grad = ectx.createLinearGradient(0, 0, 0, 256);
+      grad.addColorStop(0.0, "#ffffff"); grad.addColorStop(0.42, "#ebebf0");
+      grad.addColorStop(0.58, "#d4d4dc"); grad.addColorStop(1.0, "#b8b8c2");
+      ectx.fillStyle = grad; ectx.fillRect(0, 0, 16, 256);
+      var envTex = new THREE.CanvasTexture(envCanvas);
+      envTex.mapping = THREE.EquirectangularReflectionMapping;
+      scene3d.environment = envTex;
+
+      var faceMat = new THREE.MeshStandardMaterial({ color: 0x9a9aa2, metalness: 1.0, roughness: 0.26, envMapIntensity: 1.4 });
+      var sideMat = new THREE.MeshStandardMaterial({ color: 0xf2f2f5, metalness: 1.0, roughness: 0.30, envMapIntensity: 2.0, emissive: 0x5a5a62, emissiveIntensity: 0.55 });
+      var diskMat = [sideMat, faceMat, faceMat]; // [lateral rim, top cap, bottom cap]
+
+      var logoGroup = new THREE.Group();
+      var diskGeo = new THREE.CylinderGeometry(1, 1, 0.40, 72);
+      var offs = [[-1.02, 1.02], [1.02, 1.02], [-1.02, -1.02], [1.02, -1.02]];
+      for (var i = 0; i < 4; i++) {
+        var m = new THREE.Mesh(diskGeo, diskMat);
+        m.rotation.x = Math.PI / 2; m.position.set(offs[i][0], offs[i][1], 0); logoGroup.add(m);
+      }
+      logoGroup.scale.setScalar(2.55); logoGroup.position.set(-3.7, 2.0, 0);
+
+      scene3d.add(new THREE.AmbientLight(0xffffff, 0.6));
+      var key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(3, 5, 8); scene3d.add(key);
+      var fill3 = new THREE.DirectionalLight(0xffffff, 1.5); fill3.position.set(-5, -4, 6); scene3d.add(fill3);
+      var rimL = new THREE.DirectionalLight(0xffffff, 1.8); rimL.position.set(-7, 1, 2); scene3d.add(rimL);
+      var rimR = new THREE.DirectionalLight(0xeaf2ff, 1.4); rimR.position.set(7, -1, 2); scene3d.add(rimR);
+      scene3d.add(logoGroup);
+
+      var BASE_RX = -0.61, BASE_RY = -0.175, BASE_RZ = Math.PI / 4;
+      var BASE_PX = -3.7, BASE_PY = 2.0, BASE_S = 2.55;
+      var view = { spin: 0, exit: 0, entry: 1 };
+      function render3d() {
+        var e = view.exit, en = view.entry || 0;
+        logoGroup.rotation.z = BASE_RZ;
+        logoGroup.rotation.y = BASE_RY + view.spin + e * Math.PI * 2.5 + en * Math.PI * 2.2;
+        logoGroup.rotation.x = BASE_RX + e * 0.6 + en * 0.5;
+        logoGroup.position.x = BASE_PX + e * 7.5;
+        logoGroup.position.y = BASE_PY + e * 4.5;
+        logoGroup.scale.setScalar(BASE_S * (1 - e * 0.55) * (1 - en * 0.55));
+        renderer.render(scene3d, camera);
+      }
+      render3d();
+
+      /* ===================================================================
+         CHART draw (Scene 2)
+      =================================================================== */
+      var line = document.getElementById("chartLine");
+      var fill = document.getElementById("chartFill");
+      var dot = document.getElementById("chartDot");
+      var LEN = line.getTotalLength();
+      line.style.strokeDasharray = LEN; line.style.strokeDashoffset = LEN;
+      var draw = { p: 0 };
+      function renderChart() {
+        var p = draw.p;
+        line.style.strokeDashoffset = LEN * (1 - p);
+        var pt = line.getPointAtLength(Math.max(0.001, LEN * p));
+        dot.setAttribute("cx", pt.x); dot.setAttribute("cy", pt.y);
+        dot.style.opacity = p >= 0.999 ? 0 : 1;
+      }
+      gsap.set(fill, { opacity: 0 }); renderChart();
+
+      /* ===================================================================
+         TIMELINE  (S1 0–2.8 · S2 2.7–6.4 · push 5.8 · S3 6.1–8.6 · S4 8.2–13.9)
+      =================================================================== */
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+
+      /* SCENE 1 */
+      tl.to(view, { spin: 0.25, duration: 2.8, ease: "none", onUpdate: render3d }, 0);
+      tl.fromTo(view, { entry: 1 }, { entry: 0, duration: 1.3, ease: "power3.out", onUpdate: render3d }, 0);
+      tl.from(canvas, { opacity: 0, duration: 0.55, ease: "power2.out" }, 0);
+      tl.from(s1l1, { x: 90, opacity: 0, duration: 0.4, ease: "power3.out", stagger: 0.035 }, 0.15);
+      tl.from(s1l2, { x: 70, opacity: 0, duration: 0.38, ease: "power2.out", stagger: 0.02 }, 0.5);
+      tl.to([].concat(s1l1, s1l2), { x: -1700, opacity: 0, filter: "blur(7px)", duration: 0.45, ease: "power2.in", stagger: 0.01 }, 2.0);
+      tl.to(view, { exit: 1, duration: 0.6, ease: "power3.in", onUpdate: render3d }, 2.05);
+      tl.to(canvas, { opacity: 0, duration: 0.45, ease: "power2.in" }, 2.2);
+      tl.set(canvas, { opacity: 0 }, 2.7);
+      tl.set([].concat(s1l1, s1l2), { opacity: 0 }, 2.8);
+
+      /* SCENE 2 */
+      tl.fromTo(".s2-stage", { scale: 1.22, x: -60, y: 70 }, { scale: 1, x: 0, y: 0, duration: 1.4, ease: "power3.out" }, 2.8);
+      tl.to(draw, { p: 1, duration: 1.4, ease: "power3.out", onUpdate: renderChart }, 2.8);
+      tl.to(fill, { opacity: 1, duration: 0.6, ease: "power2.out" }, 3.85);
+      tl.from("#s2num", { scale: 0.7, opacity: 0, transformOrigin: "0% 50%", duration: 0.4, ease: "back.out(1.6)" }, 3.45);
+      tl.to(count, { v: STAT_TARGET, duration: 1.35, ease: "power2.out", onUpdate: renderCount }, 3.5);
+      tl.from("#s2sub", { y: 26, opacity: 0, duration: 0.45, ease: "power2.out" }, 4.7);
+
+      /* PUSH transition S2 -> S3 (mint seam leads) */
+      tl.to(".s2", { yPercent: -100, duration: 0.55, ease: "power3.inOut" }, 5.8);
+      tl.fromTo(".s3", { yPercent: 100 }, { yPercent: 0, duration: 0.55, ease: "power3.inOut" }, 5.8);
+      tl.to(".seam", { opacity: 0, duration: 0.3, ease: "power1.out" }, 6.37);
+
+      /* SCENE 3 */
+      tl.from(cubeEls, { x: 1400, y: -160, opacity: 0, duration: 0.95, ease: "power3.out", stagger: 0.06 }, 6.1);
+      tl.from(s3head, { y: 44, opacity: 0, duration: 0.42, ease: "power3.out", stagger: 0.02 }, 6.35);
+      tl.to(s3head, { y: -56, opacity: 0, duration: 0.4, ease: "power2.in", stagger: 0.02 }, 7.5);
+      tl.to(cubeEls, { x: -1900, y: 200, opacity: 0, filter: "blur(8px)", duration: 0.8, ease: "power2.in", stagger: 0.045 }, 7.55);
+      tl.set(cubeEls, { opacity: 0 }, 8.6);
+
+      /* SCENE 4 */
+      tl.from(".s4", { opacity: 0, duration: 0.4, ease: "power1.out" }, 8.2);
+      tl.from("#mark", { rotation: -1080, scale: 0.35, opacity: 0, transformOrigin: "50% 50%", duration: 1.4, ease: "power3.out" }, 8.45);
+      tl.fromTo("#wordmark",
+        { clipPath: "inset(0 100% 0 0)", webkitClipPath: "inset(0 100% 0 0)" },
+        { clipPath: "inset(0 0% 0 0)", webkitClipPath: "inset(0 0% 0 0)", duration: 0.9, ease: "steps(11)" }, 9.9);
+      tl.from("#wordmark", { opacity: 0, duration: 0.12 }, 9.9);
+      tl.fromTo("#glint", { x: -130 }, { x: 210, duration: 0.8, ease: "power1.inOut" }, 11.8);
+      tl.to(".s4-lockup", { opacity: 0, duration: 0.6, ease: "power2.in" }, 13.3);
+
+      /* POST FX — impact punch + chromatic RGB shift on the two cuts */
+      tl.to("#s2num", { scale: 1.06, duration: 0.09, ease: "power2.out", yoyo: true, repeat: 1 }, 4.78);
+      var ab = { v: 0 };
+      function setAb() {
+        var r = document.getElementById("abR"), b = document.getElementById("abB");
+        if (r) r.setAttribute("dx", -ab.v);
+        if (b) b.setAttribute("dx", ab.v);
+      }
+      tl.set(".s1", { filter: "url(#rgbShift)" }, 1.95);
+      tl.to(ab, { v: 9, duration: 0.25, ease: "power2.in", onUpdate: setAb }, 1.98);
+      tl.to(ab, { v: 0, duration: 0.3, ease: "power2.out", onUpdate: setAb }, 2.25);
+      tl.set(".s1", { filter: "none" }, 2.78);
+      tl.set([".s2", ".s3"], { filter: "url(#rgbShift)" }, 5.7);
+      tl.to(ab, { v: 12, duration: 0.28, ease: "power2.in", onUpdate: setAb }, 5.72);
+      tl.to(ab, { v: 0, duration: 0.34, ease: "power2.out", onUpdate: setAb }, 6.02);
+      tl.set([".s2", ".s3"], { filter: "none" }, 6.6);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
