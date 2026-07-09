@@ -29,3 +29,11 @@ tokens-videos/templates/trending-assets/assets/bgm-eleven-*.mp3
 tokens-videos/templates/trending-assets/assets/bgm-eleven-*.wav
 tokens-videos/templates/trending-assets/assets/bgm-eleven-*.prompt.txt
 tokens-videos/templates/trending-assets/assets/lofi-drums-*.wav
+
+# Example projects retain source and approved assets; their renders and tool caches are regenerated.
+tokens-videos/projects/**/renders/
+tokens-videos/projects/**/.hyperframes/
+tokens-videos/projects/**/.thumbnails/
+tokens-videos/projects/**/.waveform-cache/
+tokens-videos/projects/**/beats/
+tokens-videos/projects/**/assets/bgm-*.mp3

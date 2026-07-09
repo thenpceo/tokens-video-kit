@@ -1,0 +1,9 @@
+{
+  "breaking_line1": "EQUITIES",
+  "breaking_line2": "$50M IN 24H",
+  "stat_prefix": "$",
+  "stat_value": 50,
+  "stat_suffix": "M",
+  "stat_label": "TOKENIZED EQUITIES VOLUME",
+  "music": "assets/bgm-equities-50m.wav"
+}

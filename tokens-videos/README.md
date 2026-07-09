@@ -12,8 +12,9 @@ tokens-videos/
 ├── references/              # brand.md, templates.md, audio.md, build-and-render.md
 ├── assets/                  # logo.svg, wordmark.svg, cubes/, sfx/, design.md
 └── templates/
-    ├── breaking-ath/        # self-contained HyperFrames project (retheme via variables)
-    └── trending-assets/     # cron-ready Tokens API + ElevenLabs + HyperFrames render flow
+    ├── breaking-ath/        # 16:9 self-contained milestone template
+    ├── breaking-ath-square/ # 1:1 self-contained milestone template
+    └── trending-assets/     # stock-only Tokens API + ElevenLabs + HyperFrames render flow
 ```
 
 ## Requirements
@@ -26,9 +27,9 @@ tokens-videos/
 
 ## Install
 
-**Option A — `skills` CLI (recommended, same as hyperframes).** Put this folder in a git repo and:
+**Option A — `skills` CLI (recommended, same as hyperframes).** Install the public kit:
 ```bash
-npx skills add <your-org>/<your-repo>      # installs into ~/.agents/skills, symlinked per agent
+npx skills add thenpceo/tokens-video-kit
 ```
 
 **Option B — local, Claude Code.** Copy the folder into your skills dir:
@@ -54,6 +55,7 @@ npx hyperframes render --variables '{"stat_value":250,"scene3_heading":"Tokenize
 
 Cron-ready trending-assets flow:
 ```bash
+cp tokens-videos/env.example env
 cd tokens-videos/templates/trending-assets
 node render-trending-assets.mjs
 ```

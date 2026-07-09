@@ -38,14 +38,26 @@
         box-shadow: 0 12px 34px rgba(20,20,30,0.05); will-change: transform, opacity;
         overflow: hidden;
       }
-      /* per-card colored gradient border (accent strongest at top-left, fading to neutral) */
+      /* per-card orbiting gradient border */
       .ta-row::before {
         content: ""; position: absolute; inset: 0; border-radius: 22px; padding: 2px; pointer-events: none;
-        background: linear-gradient(118deg, var(--accent-a) 0%, var(--accent-b) 20%, #ededf1 52%);
+        background:
+          conic-gradient(
+            from var(--border-angle),
+            #ececf0 0deg,
+            #ececf0 72deg,
+            color-mix(in srgb, var(--accent-a) 64%, #ffffff) 112deg,
+            var(--accent-b) 154deg,
+            var(--accent-a) 194deg,
+            color-mix(in srgb, var(--accent-b) 48%, #ffffff) 232deg,
+            #ececf0 292deg,
+            #ececf0 360deg
+          );
         -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
         -webkit-mask-composite: xor; mask-composite: exclude;
       }
-      .ta-row { --accent-a: #9aa0a6; --accent-b: #9aa0a6; }
+      .ta-row { --accent-a: #9aa0a6; --accent-b: #9aa0a6; --border-angle: 0deg; }
+      .ta-row > * { position: relative; z-index: 1; }
       .ta-idwrap { display: flex; align-items: center; gap: 22px; min-width: 0; }
       .ta-logo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; background: #f3f3f6; border: 1px solid #ececf0; flex: none; }
       .ta-name { font-size: 42px; font-weight: 600; letter-spacing: -1px; color: #1C1C1D; line-height: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -87,7 +99,7 @@
         </div>
       </div>
 
-      <div data-hf-id="hf-8nl2" class="grain clip" data-start="0" data-duration="8.5" data-track-index="13"><div data-hf-id="hf-7uxp" class="grain-fill"></div><div data-hf-id="hf-rt74" class="vignette-fill"></div></div>
+      <div data-hf-id="hf-8nl2" id="grain" class="grain clip" data-start="0" data-duration="8.5" data-track-index="13"><div data-hf-id="hf-7uxp" class="grain-fill"></div><div data-hf-id="hf-rt74" class="vignette-fill"></div></div>
 
       <!-- AUDIO -->
       <audio data-hf-id="hf-7x0p" id="a-bgm" src="assets/bgm-eleven-latest.wav" data-start="0" data-duration="8.5" data-track-index="6" data-volume="0.58"></audio>
@@ -104,8 +116,16 @@
       var TRENDING = (window.TRENDING || []).slice(0, 4);
       var BRAND_ACCENTS = {
         SPCX: ["#151719", "#151719"],
+        SPCXx: ["#151719", "#151719"],
+        ARX: ["#6D45FF", "#F1A1FF"],
         HYPE: ["#14F195", "#0BBF7A"],
         cbBTC: ["#0052FF", "#2F80FF"],
+        ZEC: ["#F4B728", "#D9961F"],
+        MU: ["#B100FF", "#242833"],
+        SNDK: ["#E31B23", "#6B7280"],
+        NVDAx: ["#76B900", "#234F0B"],
+        TSLAx: ["#E82127", "#111827"],
+        CRCLx: ["#2775CA", "#00AEEF"],
         wETH: ["#6F7378", "#A6AAAF"],
         ETH: ["#6F7378", "#A6AAAF"]
       };
@@ -144,6 +164,7 @@
         var accents = BRAND_ACCENTS[a.symbol] || (a.accentA ? [a.accentA, a.accentB || a.accentA] : REFERENCE_ACCENTS[idx]) || ["#9aa0a6", "#9aa0a6"];
         row.style.setProperty("--accent-a", accents[0]);
         row.style.setProperty("--accent-b", accents[1] || accents[0]);
+        row.style.setProperty("--border-angle", "0deg");
         row.innerHTML =
           '<div class="ta-idwrap">' +
             (a.logo ? '<img class="ta-logo" src="' + a.logo + '" alt="">' : '<div class="ta-logo"></div>') +
@@ -219,6 +240,16 @@
       tl.from("#taDate", { y: -18, opacity: 0, duration: 0.45, ease: "power2.out" }, 0.5);
       tl.from(".ta-note", { opacity: 0, duration: 0.5, ease: "power1.out" }, 0.75);
       tl.from(rowEls, { y: 48, opacity: 0, duration: 0.55, ease: "power3.out", stagger: 0.13 }, 0.95);
+      var borderOrbit = { angle: 0 };
+      tl.to(borderOrbit, {
+        angle: 360,
+        duration: 8.5,
+        ease: "none",
+        onUpdate: function () {
+          var angle = borderOrbit.angle.toFixed(2) + "deg";
+          rowEls.forEach(function (row) { row.style.setProperty("--border-angle", angle); });
+        }
+      }, 0);
       rowEls.forEach(function (row, idx) {
         var cells = row.querySelectorAll(".ta-logo, .ta-name, .ta-tkr, .ta-vol");
         tl.from(cells, { y: 14, opacity: 0, duration: 0.42, ease: "power2.out", stagger: 0.045 }, 1.08 + idx * 0.13);

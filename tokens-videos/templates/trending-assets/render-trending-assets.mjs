@@ -2,7 +2,7 @@
 /**
  * Cron-friendly Trending Assets pipeline:
  * 1. load local env files
- * 2. refresh top 4 Tokens API assets into data.js
+ * 2. refresh top 4 Tokens API tokenized stocks into data.js
  * 3. generate a beat-forward ElevenLabs instrumental bed
  * 4. validate/lint and render the HyperFrames MP4
  */
@@ -95,7 +95,7 @@ if (!skipMusic) {
   const prompt = [
     "Instrumental lofi hip hop track with an obvious beat from the very first second.",
     "No ambient intro. Start immediately with punchy kick drum, crisp snare on beats two and four, audible hi hat groove.",
-    "Warm vinyl texture, mellow Rhodes chords, round bassline, sidechain bounce, premium fintech crypto social video energy.",
+    "Warm vinyl texture, mellow Rhodes chords, round bassline, sidechain bounce, premium tokenized equities fintech social video energy.",
     "Drums should be foreground and clearly audible, not background texture. No vocals, no vocal chops.",
   ].join(" ");
 
