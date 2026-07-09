@@ -25,6 +25,12 @@ tokens-videos/
   npx skills add heygen-com/hyperframes
   ```
 
+For the complete agent-ready install, including Node/FFmpeg checks, the Tokens skill, and the credentials flow, read [`../SETUP.md`](../SETUP.md) and run:
+
+```bash
+bash ../scripts/bootstrap-video-kit.sh
+```
+
 ## Install
 
 **Option A — `skills` CLI (recommended, same as hyperframes).** Install the public kit:
