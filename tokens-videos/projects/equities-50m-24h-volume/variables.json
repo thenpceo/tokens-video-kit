@@ -4,6 +4,6 @@
   "stat_prefix": "$",
   "stat_value": 50,
   "stat_suffix": "M",
-  "stat_label": "TOKENIZED EQUITIES VOLUME",
+  "stat_label": "24HR EQUITIES VOLUME",
   "music": "assets/bgm-equities-50m.wav"
 }

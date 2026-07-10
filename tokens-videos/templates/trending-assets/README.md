@@ -2,7 +2,7 @@
 
 A ~8.5s square (1080×1080) post (matches the Figma "Trending Assets" design): the 3D Tokens mark spins in as a faint background, then the **"Trending Assets"** title, today's **date**, a disclaimer line, and **4 asset rows** animate in — each row is **logo + Name · $TICKER · 24h Volume** with a soft per-card colored accent border — plus a footer (mark · year · tokens.xyz). Single self-contained card, no separate outro.
 
-The rows are **data-driven** — auto-filled with the **top 4 tokenized stocks on tokens.xyz by 24h volume** from the Tokens API. Crypto tokens, ETFs, stablecoins, RWAs, and commodities are intentionally excluded by requiring `category === "equity"`.
+The rows are **data-driven** — auto-filled with the **top 4 non-crypto, non-stablecoin tokenized assets on tokens.xyz by 24h volume** from the full curated Tokens API universe. It excludes `category === "crypto"` and `category === "stablecoin"`, so tokenized equities, ETFs, and commodities remain eligible.
 
 ## One-command production flow
 
@@ -16,7 +16,7 @@ node render-trending-assets.mjs
 The script:
 - loads env from the repo root `env` / `env.local` plus local `.env` files
 - maps `TOKENS_XYZ_API_KEY` to the template's `TOKENS_API_KEY` fetch step
-- refreshes top 4 tokenized stocks by 24h volume from the Tokens API (`category === "equity"`)
+- refreshes top 4 non-crypto, non-stablecoin tokenized assets by 24h volume from the full curated Tokens API universe
 - downloads logos and writes deterministic `data.js`
 - generates a new beat-forward instrumental via ElevenLabs Music API
 - normalizes/trims it to `assets/bgm-eleven-latest.wav`
@@ -51,14 +51,14 @@ The composition renders deterministically, so data is baked in ahead of time by 
 
 ```bash
 cd trending-assets
-TOKENS_API_KEY=tok_xxx node fetch-trending.mjs      # pulls top 4 tokenized stocks by 24h volume, downloads logos, writes data.js
+TOKENS_API_KEY=tok_xxx node fetch-trending.mjs      # pulls top 4 non-crypto, non-stablecoin tokenized assets by 24h volume, downloads logos, writes data.js
 npx hyperframes render --output trending.mp4
 ```
 
 `fetch-trending.mjs`:
-- `GET https://api.tokens.xyz/v1/assets/trending` with header `x-api-key: $TOKENS_API_KEY` (docs: https://docs.tokens.xyz/v1)
-- filters to `category === "equity"` so crypto tokens and other non-stock categories never appear
-- sorts by `market.volume24hUSD`, takes the top N (default 4, pass a number to change)
+- `GET https://api.tokens.xyz/v1/assets/curated?list=all&groupBy=asset&limit=500` with header `x-api-key: $TOKENS_API_KEY` (docs: https://docs.tokens.xyz/v1)
+- excludes `category === "crypto"` and `category === "stablecoin"` so tokenized equities, ETFs, and commodities can appear
+- sorts by `stats.volume24hUSD`, takes the top N (default 4, pass a number to change)
 - downloads each logo to `assets/logoN.<ext>` based on the response content type
 - writes `data.js` → `window.TRENDING = [{ rank, symbol, name, logo, priceText, volText, changeText, up }, …]`
 

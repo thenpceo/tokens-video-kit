@@ -35,7 +35,7 @@
         transform-origin: 50% 50%;
         background: radial-gradient(120% 120% at 50% 0%, #ffffff 60%, #f5f5f8 100%);
       }
-      .s1 { z-index: 1; } .s2 { z-index: 2; } .s3 { z-index: 3; } .s4 { z-index: 4; }
+      .s1 { display: none; z-index: 1; } .s2 { z-index: 2; } .s3 { z-index: 3; } .s4 { z-index: 4; }
 
       /* ---- SCENE 1 ---- */
       #logo3d {
@@ -84,7 +84,7 @@
     </style>
   </head>
   <body>
-    <div data-hf-id="hf-e9pk" id="root" data-composition-id="main" data-start="0" data-duration="11.5" data-width="1080" data-height="1080">
+    <div data-hf-id="hf-e9pk" id="root" data-composition-id="main" data-start="0" data-duration="8.5" data-width="1080" data-height="1080">
 
       <!-- SCENE 1 — 3D logo + headline -->
       <div data-hf-id="hf-n7p5" id="scene-1" class="scene s1 clip" data-start="0" data-duration="2.8" data-track-index="1">
@@ -96,7 +96,7 @@
       </div>
 
       <!-- SCENE 2 — chart + counting stat -->
-      <div data-hf-id="hf-3xdz" id="scene-2" class="scene s2 clip" data-start="2.7" data-duration="3.9" data-track-index="2">
+      <div data-hf-id="hf-3xdz" id="scene-2" class="scene s2 clip" data-start="0" data-duration="3.55" data-track-index="2">
         <div data-hf-id="hf-rfk6" class="s2-stage">
           <svg data-hf-id="hf-giqv" class="chart-svg" data-layout-allow-overflow viewBox="0 0 1920 1050" preserveAspectRatio="none">
             <defs data-hf-id="hf-mh0t">
@@ -125,7 +125,7 @@
       <!-- (scene 3 / cubes removed for this cut) -->
 
       <!-- SCENE 4 — logo + wordmark outro (now follows scene 2 directly) -->
-      <div data-hf-id="hf-8ou5" id="scene-4" class="scene s4 clip" data-start="5.8" data-duration="5.7" data-track-index="4">
+      <div data-hf-id="hf-8ou5" id="scene-4" class="scene s4 clip" data-start="3" data-duration="5.5" data-track-index="4">
         <div data-hf-id="hf-30oq" class="seam"></div>
         <div data-hf-id="hf-v2u4" class="s4-lockup">
           <div data-hf-id="hf-x5io" class="mark-wrap">
@@ -137,7 +137,7 @@
       </div>
 
       <!-- whole-piece grade -->
-      <div data-hf-id="hf-3szu" id="grain" class="grain clip" data-start="0" data-duration="11.5" data-track-index="13"><div data-hf-id="hf-7uxp" class="grain-fill"></div><div data-hf-id="hf-rt74" class="vignette-fill"></div></div>
+      <div data-hf-id="hf-3szu" id="grain" class="grain clip" data-start="0" data-duration="8.5" data-track-index="13"><div data-hf-id="hf-7uxp" class="grain-fill"></div><div data-hf-id="hf-rt74" class="vignette-fill"></div></div>
 
       <!-- chromatic RGB-shift filter (driven from the timeline) -->
       <svg data-hf-id="hf-30au" width="0" height="0" style="position:absolute" aria-hidden="true"><defs data-hf-id="hf-vl9d">
@@ -153,15 +153,14 @@
       </defs></svg>
 
       <!-- AUDIO: bed + SFX. (music bed is swappable via the `music` variable) -->
-      <audio data-hf-id="hf-0tuh" id="a-bgm" src="assets/bgm-lofi.wav" data-start="0" data-duration="11.5" data-track-index="6" data-volume="0.5"></audio>
-      <audio data-hf-id="hf-5gvn" id="a-wh1" src="assets/whoosh.wav" data-start="2.45" data-duration="0.6" data-track-index="7" data-volume="0.55"></audio>
-      <audio data-hf-id="hf-6why" id="a-riser" src="assets/riser-cine2.wav" data-start="2.5" data-duration="2.0" data-track-index="8" data-volume="0.55"></audio>
-      <audio data-hf-id="hf-k1ao" id="a-slot" src="assets/slot.wav" data-start="3.5" data-duration="1.31" data-track-index="16" data-volume="0.58"></audio>
-      <audio data-hf-id="hf-vrr0" id="a-thump" src="assets/thump.wav" data-start="4.78" data-duration="0.5" data-track-index="9" data-volume="0.75"></audio>
-      <audio data-hf-id="hf-19pa" id="a-wh2" src="assets/whoosh.wav" data-start="5.8" data-duration="0.6" data-track-index="7" data-volume="0.6"></audio>
-      <audio data-hf-id="hf-r1k0" id="a-logo" src="assets/whoosh-soft.wav" data-start="6.05" data-duration="0.9" data-track-index="11" data-volume="0.5"></audio>
-      <audio data-hf-id="hf-581z" id="a-type" src="assets/typing-v2.wav" data-start="7.45" data-duration="0.95" data-track-index="14" data-volume="0.3"></audio>
-      <audio data-hf-id="hf-b1q6" id="a-spark" src="assets/sparkle.wav" data-start="9.6" data-duration="0.6" data-track-index="12" data-volume="0.125"></audio>
+      <audio data-hf-id="hf-0tuh" id="a-bgm" src="assets/bgm-lofi.wav" data-start="0" data-duration="8.5" data-track-index="6" data-volume="0.5"></audio>
+      <audio data-hf-id="hf-6why" id="a-riser" src="assets/riser-cine2.wav" data-start="0" data-duration="2.0" data-track-index="8" data-volume="0.55"></audio>
+      <audio data-hf-id="hf-k1ao" id="a-slot" src="assets/slot.wav" data-start="0.7" data-duration="1.31" data-track-index="16" data-volume="0.58"></audio>
+      <audio data-hf-id="hf-vrr0" id="a-thump" src="assets/thump.wav" data-start="1.98" data-duration="0.5" data-track-index="9" data-volume="0.75"></audio>
+      <audio data-hf-id="hf-19pa" id="a-wh2" src="assets/whoosh.wav" data-start="3" data-duration="0.6" data-track-index="7" data-volume="0.6"></audio>
+      <audio data-hf-id="hf-r1k0" id="a-logo" src="assets/whoosh-soft.wav" data-start="3.25" data-duration="0.9" data-track-index="11" data-volume="0.5"></audio>
+      <audio data-hf-id="hf-581z" id="a-type" src="assets/typing-v2.wav" data-start="4.65" data-duration="0.95" data-track-index="14" data-volume="0.3"></audio>
+      <audio data-hf-id="hf-b1q6" id="a-spark" src="assets/sparkle.wav" data-start="6.8" data-duration="0.6" data-track-index="12" data-volume="0.125"></audio>
     </div>
 
     <script>
@@ -269,63 +268,47 @@
       gsap.set(fill, { opacity: 0 }); renderChart();
 
       /* ===================================================================
-         TIMELINE  (S1 0–2.8 · S2 2.7–6.4 · push 5.8 · S3 6.1–8.6 · S4 8.2–13.9)
+         TIMELINE  (S2 0–3.55 · push 3.0 · S4 3.0–8.5)
       =================================================================== */
       window.__timelines = window.__timelines || {};
       var tl = gsap.timeline({ paused: true });
 
-      /* SCENE 1 */
-      tl.to(view, { spin: 0.25, duration: 2.8, ease: "none", onUpdate: render3d }, 0);
-      tl.fromTo(view, { entry: 1 }, { entry: 0, duration: 1.3, ease: "power3.out", onUpdate: render3d }, 0);
-      tl.from(canvas, { opacity: 0, duration: 0.55, ease: "power2.out" }, 0);
-      tl.from(s1l1, { x: 90, opacity: 0, duration: 0.4, ease: "power3.out", stagger: 0.035 }, 0.15);
-      tl.from(s1l2, { x: 70, opacity: 0, duration: 0.38, ease: "power2.out", stagger: 0.02 }, 0.5);
-      tl.to([].concat(s1l1, s1l2), { x: -1100, opacity: 0, filter: "blur(7px)", duration: 0.45, ease: "power2.in", stagger: 0.01 }, 2.0);
-      tl.to(view, { exit: 1, duration: 0.6, ease: "power3.in", onUpdate: render3d }, 2.05);
-      tl.to(canvas, { opacity: 0, duration: 0.45, ease: "power2.in" }, 2.2);
-      tl.set(canvas, { opacity: 0 }, 2.7);
-      tl.set([].concat(s1l1, s1l2), { opacity: 0 }, 2.8);
-
       /* SCENE 2 */
-      tl.fromTo(".s2-stage", { scale: 1.22, x: -60, y: 70 }, { scale: 1, x: 0, y: 0, duration: 1.4, ease: "power3.out" }, 2.8);
-      tl.to(draw, { p: 1, duration: 1.4, ease: "power3.out", onUpdate: renderChart }, 2.8);
-      tl.to(fill, { opacity: 1, duration: 0.6, ease: "power2.out" }, 3.85);
-      tl.from("#s2num", { scale: 0.7, opacity: 0, transformOrigin: "50% 50%", duration: 0.4, ease: "back.out(1.6)" }, 3.45);
-      tl.to(count, { v: STAT_TARGET, duration: 1.35, ease: "power2.out", onUpdate: renderCount }, 3.5);
-      // "Tokenized Equities Volume" + triangle: animate in, centered, nudged 5px right.
+      tl.fromTo(".s2-stage", { scale: 1.22, x: -60, y: 70 }, { scale: 1, x: 0, y: 0, duration: 1.4, ease: "power3.out" }, 0);
+      tl.to(draw, { p: 1, duration: 1.4, ease: "power3.out", onUpdate: renderChart }, 0);
+      tl.to(fill, { opacity: 1, duration: 0.6, ease: "power2.out" }, 1.05);
+      tl.from("#s2num", { scale: 0.7, opacity: 0, transformOrigin: "50% 50%", duration: 0.4, ease: "back.out(1.6)" }, 0.65);
+      tl.to(count, { v: STAT_TARGET, duration: 1.35, ease: "power2.out", onUpdate: renderCount }, 0.7);
+      // "24HR Equities Volume" + triangle: animate in, centered, nudged 5px right.
       // (offset is baked into the tween so a Studio drag won't re-break it)
-      tl.fromTo("#s2vol", { y: 26, opacity: 0, x: 5 }, { y: 0, opacity: 1, x: 5, duration: 0.45, ease: "power2.out" }, 4.7);
+      tl.fromTo("#s2vol", { y: 26, opacity: 0, x: 5 }, { y: 0, opacity: 1, x: 5, duration: 0.45, ease: "power2.out" }, 1.9);
 
       /* PUSH transition S2 -> S4 (mint seam leads) */
-      tl.to(".s2", { yPercent: -100, duration: 0.55, ease: "power3.inOut" }, 5.8);
-      tl.fromTo(".s4", { yPercent: 100 }, { yPercent: 0, duration: 0.55, ease: "power3.inOut" }, 5.8);
-      tl.to(".seam", { opacity: 0, duration: 0.3, ease: "power1.out" }, 6.37);
+      tl.to(".s2", { yPercent: -100, duration: 0.55, ease: "power3.inOut" }, 3.0);
+      tl.fromTo(".s4", { yPercent: 100 }, { yPercent: 0, duration: 0.55, ease: "power3.inOut" }, 3.0);
+      tl.to(".seam", { opacity: 0, duration: 0.3, ease: "power1.out" }, 3.57);
 
       /* SCENE 4 (outro) */
-      tl.from("#mark", { rotation: -1080, scale: 0.35, opacity: 0, transformOrigin: "50% 50%", duration: 1.4, ease: "power3.out" }, 6.05);
+      tl.from("#mark", { rotation: -1080, scale: 0.35, opacity: 0, transformOrigin: "50% 50%", duration: 1.4, ease: "power3.out" }, 3.25);
       tl.fromTo("#wordmark",
         { clipPath: "inset(0 100% 0 0)", webkitClipPath: "inset(0 100% 0 0)" },
-        { clipPath: "inset(0 0% 0 0)", webkitClipPath: "inset(0 0% 0 0)", duration: 0.9, ease: "steps(11)" }, 7.45);
-      tl.from("#wordmark", { opacity: 0, duration: 0.12 }, 7.45);
-      tl.fromTo("#glint", { x: -130 }, { x: 210, duration: 0.8, ease: "power1.inOut" }, 9.2);
-      tl.to(".s4-lockup", { opacity: 0, duration: 0.6, ease: "power2.in" }, 10.7);
+        { clipPath: "inset(0 0% 0 0)", webkitClipPath: "inset(0 0% 0 0)", duration: 0.9, ease: "steps(11)" }, 4.65);
+      tl.from("#wordmark", { opacity: 0, duration: 0.12 }, 4.65);
+      tl.fromTo("#glint", { x: -130 }, { x: 210, duration: 0.8, ease: "power1.inOut" }, 6.4);
+      tl.to(".s4-lockup", { opacity: 0, duration: 0.6, ease: "power2.in" }, 7.9);
 
       /* POST FX — impact punch + chromatic RGB shift on the two cuts */
-      tl.to("#s2num", { scale: 1.06, duration: 0.09, ease: "power2.out", yoyo: true, repeat: 1 }, 4.78);
+      tl.to("#s2num", { scale: 1.06, duration: 0.09, ease: "power2.out", yoyo: true, repeat: 1 }, 1.98);
       var ab = { v: 0 };
       function setAb() {
         var r = document.getElementById("abR"), b = document.getElementById("abB");
         if (r) r.setAttribute("dx", -ab.v);
         if (b) b.setAttribute("dx", ab.v);
       }
-      tl.set(".s1", { filter: "url(#rgbShift)" }, 1.95);
-      tl.to(ab, { v: 9, duration: 0.25, ease: "power2.in", onUpdate: setAb }, 1.98);
-      tl.to(ab, { v: 0, duration: 0.3, ease: "power2.out", onUpdate: setAb }, 2.25);
-      tl.set(".s1", { filter: "none" }, 2.78);
-      tl.set([".s2", ".s4"], { filter: "url(#rgbShift)" }, 5.7);
-      tl.to(ab, { v: 12, duration: 0.28, ease: "power2.in", onUpdate: setAb }, 5.72);
-      tl.to(ab, { v: 0, duration: 0.34, ease: "power2.out", onUpdate: setAb }, 6.02);
-      tl.set([".s2", ".s4"], { filter: "none" }, 6.6);
+      tl.set([".s2", ".s4"], { filter: "url(#rgbShift)" }, 2.9);
+      tl.to(ab, { v: 12, duration: 0.28, ease: "power2.in", onUpdate: setAb }, 2.92);
+      tl.to(ab, { v: 0, duration: 0.34, ease: "power2.out", onUpdate: setAb }, 3.22);
+      tl.set([".s2", ".s4"], { filter: "none" }, 3.8);
 
       window.__timelines["main"] = tl;
     </script>

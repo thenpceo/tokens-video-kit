@@ -14,7 +14,7 @@ tokens-videos/
 └── templates/
     ├── breaking-ath/        # 16:9 self-contained milestone template
     ├── breaking-ath-square/ # 1:1 self-contained milestone template
-    └── trending-assets/     # stock-only Tokens API + ElevenLabs + HyperFrames render flow
+    └── trending-assets/     # non-crypto/non-stablecoin Tokens API + ElevenLabs + HyperFrames render flow
 ```
 
 ## Requirements

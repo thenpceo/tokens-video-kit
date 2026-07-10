@@ -58,6 +58,6 @@ cd tokens-videos/templates/trending-assets
 node render-trending-assets.mjs
 ```
 
-This fetches the current top four tokenized stocks only, generates a new ElevenLabs instrumental, validates the composition, and writes a timestamped MP4 to `renders/`.
+This fetches the current top four non-crypto, non-stablecoin tokenized assets (equities, ETFs, and commodities) from the full curated universe, generates a new ElevenLabs instrumental, validates the composition, and writes a timestamped MP4 to `renders/`.
 
 For a milestone render that does not require a live Tokens API fetch, start with `tokens-videos/templates/breaking-ath-square/` and use HyperFrames variables as documented in `tokens-videos/references/templates.md`.

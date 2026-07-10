@@ -15,13 +15,13 @@ bash scripts/bootstrap-video-kit.sh
 cp tokens-videos/env.example env
 ```
 
-After adding the two API keys to `env`, the agent can run the full stock-only video workflow:
+After adding the two API keys to `env`, the agent can run the full non-crypto, non-stablecoin Trending Assets video workflow:
 
 ```bash
 cd tokens-videos/templates/trending-assets
 node render-trending-assets.mjs
 ```
 
-Start with [AGENTS.md](AGENTS.md), then read [tokens-videos/SKILL.md](tokens-videos/SKILL.md). The included templates cover milestone announcements and the repeatable, stock-only Trending Assets workflow.
+Start with [AGENTS.md](AGENTS.md), then read [tokens-videos/SKILL.md](tokens-videos/SKILL.md). The included templates cover milestone announcements and the repeatable Trending Assets workflow, which ranks the curated universe while excluding crypto and stablecoins.
 
 Credentials are intentionally not included. Copy `tokens-videos/env.example` to `env` at the repository root and add the required API keys locally.

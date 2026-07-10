@@ -25,7 +25,7 @@ It is a companion to the **`hyperframes`** skill (the HTML→MP4 engine). This s
 The fastest way to ship. Copy a template, override its variables (copy, stat, token logos, music), render. No code editing needed. → Go to [references/templates.md](references/templates.md).
 
 **Cron flow — Trending Assets.**
-For the repeatable "top 4 tokenized stocks by 24h volume" post, use `templates/trending-assets/render-trending-assets.mjs`. It refreshes Tokens API data/logos, filters the `/assets/trending` response to `category === "equity"` so crypto tokens and other non-stock assets are excluded, generates a beat-forward ElevenLabs instrumental, keeps the current approved footer/card/count-up/SFX design choices, validates with HyperFrames, and renders a timestamped MP4.
+For the repeatable "top 4 tokenized assets by 24h volume" post, use `templates/trending-assets/render-trending-assets.mjs`. It refreshes Tokens API data/logos from the full curated universe, excludes `crypto` and `stablecoin` categories so tokenized equities, ETFs, and commodities remain eligible, generates a beat-forward ElevenLabs instrumental, keeps the current approved footer/card/count-up/SFX design choices, validates with HyperFrames, and renders a timestamped MP4.
 
 **Path B — A new video, fully on-brand (longer).**
 A different concept/structure, but it must feel like the same family. Read the brand system, reuse the assets and motion/audio recipes, and compose in HyperFrames. → Read [references/brand.md](references/brand.md) first, then build with the `hyperframes` skill.

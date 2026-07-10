@@ -2,7 +2,7 @@
 /**
  * Cron-friendly Trending Assets pipeline:
  * 1. load local env files
- * 2. refresh top 4 Tokens API tokenized stocks into data.js
+ * 2. refresh top 4 non-crypto, non-stablecoin curated Tokens API assets into data.js
  * 3. generate a beat-forward ElevenLabs instrumental bed
  * 4. validate/lint and render the HyperFrames MP4
  */
